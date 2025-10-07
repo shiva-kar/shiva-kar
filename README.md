@@ -98,7 +98,7 @@
 </div>
 
 <!-- Activity Graph -->
-![Activity Graph](https://activity-graph.herokuapp.com/graph?username=QuantumBlazeGames&theme=react-dark&hide_border=true&color=8A2BE2&line=8A2BE2&point=FFFFFF)
+![GitHub Activity](https://github-readme-activity-graph.vercel.app/graph?username=QuantumBlazeGames&theme=react-dark&hide_border=true&color=8A2BE2&line=8A2BE2&point=FFFFFF)
 
 </div>
 
