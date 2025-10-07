@@ -1,11 +1,4 @@
-# Fixed GitHub README.md
 
-Here's the corrected version with proper formatting and working elements:
-
-```markdown
-<!--
-**QuantumBlazeGames/QuantumBlazeGames** is a ✨ _special_ ✨ repository because its `README.md` appears on your GitHub profile.
--->
 
 <div align="center">
 
