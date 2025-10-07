@@ -32,7 +32,7 @@
 
 <div align="center">
 
-```python
+
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
@@ -64,7 +64,7 @@ class QuantumDeveloper:
 dev = QuantumDeveloper()
 print(dev.introduce())
 print(dev.get_motivation())
-```
+
 
 </div>
 
@@ -75,28 +75,28 @@ print(dev.get_motivation())
 <div align="center">
 
 ### **💻 Programming Languages**
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white&labelColor=000000)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=000000)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black&labelColor=000000)
-![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white&labelColor=000000)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white&labelColor=000000)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 
 ### **🎮 Game Development**
-![Unreal Engine](https://img.shields.io/badge/Unreal_Engine-0E1128?style=for-the-badge&logo=unrealengine&logoColor=white&labelColor=000000)
-![Unity](https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white&labelColor=000000)
-![Blender](https://img.shields.io/badge/Blender-F5792A?style=for-the-badge&logo=blender&logoColor=white&labelColor=000000)
+![Unreal Engine](https://img.shields.io/badge/Unreal_Engine-0E1128?style=for-the-badge&logo=unrealengine&logoColor=white)
+![Unity](https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white)
+![Blender](https://img.shields.io/badge/Blender-F5792A?style=for-the-badge&logo=blender&logoColor=white)
 
 ### **🌐 Web Technologies**
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB&labelColor=000000)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white&labelColor=000000)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white&labelColor=000000)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white&labelColor=000000)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
 ### **🛠️ Tools & Platforms**
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white&labelColor=000000)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white&labelColor=000000)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white&labelColor=000000)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black&labelColor=000000)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
 </div>
 
@@ -106,25 +106,19 @@ print(dev.get_motivation())
 
 <div align="center">
 
-<!-- GitHub Stats -->
-<table align="center">
-  <tr>
-    <td align="center">
-      <img height="180em" src="https://github-readme-stats.vercel.app/api?username=QuantumBlazeGames&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true&bg_color=000000&title_color=8A2BE2&icon_color=8A2BE2&text_color=ffffff"/>
-    </td>
-    <td align="center">
-      <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=QuantumBlazeGames&layout=compact&theme=radical&hide_border=true&bg_color=000000&title_color=8A2BE2&text_color=ffffff"/>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center">
-      <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=QuantumBlazeGames&theme=radical&hide_border=true&background=000000&ring=8A2BE2&fire=8A2BE2&currStreakLabel=8A2BE2"/>
-    </td>
-  </tr>
-</table>
+<!-- GitHub Stats Cards -->
+<div align="center">
+  
+![Quantum's GitHub stats](https://github-readme-stats.vercel.app/api?username=QuantumBlazeGames&show_icons=true&theme=radical&hide_border=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=QuantumBlazeGames&layout=compact&theme=radical&hide_border=true)
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=QuantumBlazeGames&theme=radical&hide_border=true)
+
+</div>
 
 <!-- Activity Graph -->
-<img src="https://activity-graph.herokuapp.com/graph?username=QuantumBlazeGames&theme=react-dark&bg_color=000000&hide_border=true&color=8A2BE2&line=8A2BE2&point=FFFFFF" width="100%"/>
+![Activity Graph](https://activity-graph.herokuapp.com/graph?username=QuantumBlazeGames&theme=react-dark&hide_border=true&color=8A2BE2&line=8A2BE2&point=FFFFFF)
 
 </div>
 
@@ -136,37 +130,9 @@ print(dev.get_motivation())
 
 ### **🚀 What I'm Building**
 
-<table>
-  <tr>
-    <td align="center" width="33%">
-      <h3>🔭 Working On</h3>
-      <ul align="left">
-        <li>🎮 <b>Next-Gen Game Projects</b></li>
-        <li>⚡ <b>Performance Optimization</b></li>
-        <li>🌐 <b>Interactive Web Experiences</b></li>
-        <li>🤖 <b>AI Integration in Games</b></li>
-      </ul>
-    </td>
-    <td align="center" width="33%">
-      <h3>🌱 Learning</h3>
-      <ul align="left">
-        <li>⚛️ <b>Advanced React & TypeScript</b></li>
-        <li>🎯 <b>Unreal Engine 5 Mastery</b></li>
-        <li>🧠 <b>Machine Learning for Games</b></li>
-        <li>🔗 <b>Blockchain & Web3 Gaming</b></li>
-      </ul>
-    </td>
-    <td align="center" width="33%">
-      <h3>👯 Collaborating</h3>
-      <ul align="left">
-        <li>🌍 <b>Open Source Projects</b></li>
-        <li>♻️ <b>Sustainability Tech</b></li>
-        <li>🎨 <b>Game Jams & Hackathons</b></li>
-        <li>🚀 <b>Innovative Startups</b></li>
-      </ul>
-    </td>
-  </tr>
-</table>
+| 🔭 **Working On** | 🌱 **Learning** | 👯 **Collaborating On** |
+|:-----------------:|:---------------:|:----------------------:|
+| 🎮 **Next-Gen Game Projects**<br>⚡ **Performance Optimization**<br>🌐 **Interactive Web Experiences**<br>🤖 **AI Integration in Games** | ⚛️ **Advanced React & TypeScript**<br>🎯 **Unreal Engine 5 Mastery**<br>🧠 **Machine Learning for Games**<br>🔗 **Blockchain & Web3 Gaming** | 🌍 **Open Source Projects**<br>♻️ **Sustainability Tech**<br>🎨 **Game Jams & Hackathons**<br>🚀 **Innovative Startups** |
 
 </div>
 
@@ -178,50 +144,44 @@ print(dev.get_motivation())
 
 ### **🎮 Game Development**
 
-<table>
-  <tr>
-    <td width="50%" align="center">
-      <h3>🚀 Project Quantum</h3>
-      <p><i>Next-generation space exploration game</i></p>
-      <img src="https://via.placeholder.com/400x200/8A2BE2/FFFFFF?text=Project+Quantum" width="90%"/>
-      <br/>
-      <code>C++</code> <code>Unreal Engine 5</code> <code>Blueprints</code>
-      <br/>
-      <a href="#">🔗 Live Demo</a> • <a href="#">📁 Repository</a>
-    </td>
-    <td width="50%" align="center">
-      <h3>🌌 Cosmic Adventures</h3>
-      <p><i>Procedurally generated universe simulator</i></p>
-      <img src="https://via.placeholder.com/400x200/8A2BE2/FFFFFF?text=Cosmic+Adventures" width="90%"/>
-      <br/>
-      <code>Python</code> <code>Procedural Generation</code> <code>OpenGL</code>
-      <br/>
-      <a href="#">🔗 Live Demo</a> • <a href="#">📁 Repository</a>
-    </td>
-  </tr>
-</table>
+<div align="center">
+
+#### 🚀 **Project Quantum**
+*Next-generation space exploration game*
+<br>
+`C++` `Unreal Engine 5` `Blueprints`
+<br>
+[🔗 Live Demo](#) • [📁 Repository](#)
+
+#### 🌌 **Cosmic Adventures** 
+*Procedurally generated universe simulator*
+<br>
+`Python` `Procedural Generation` `OpenGL`
+<br>
+[🔗 Live Demo](#) • [📁 Repository](#)
+
+</div>
 
 ### **💻 Software Projects**
 
-<table>
-  <tr>
-    <td width="33%" align="center">
-      <h3>⚡ Quantum Tools</h3>
-      <p>Developer utility suite</p>
-      <code>Python</code> <code>CLI</code> <code>Automation</code>
-    </td>
-    <td width="33%" align="center">
-      <h3>🎨 Pixel Forge</h3>
-      <p>Pixel art creation tool</p>
-      <code>JavaScript</code> <code>Canvas API</code> <code>React</code>
-    </td>
-    <td width="33%" align="center">
-      <h3>🔮 AI Assistant</h3>
-      <p>Smart coding companion</p>
-      <code>Python</code> <code>Machine Learning</code> <code>NLP</code>
-    </td>
-  </tr>
-</table>
+<div align="center">
+
+#### ⚡ **Quantum Tools**
+*Developer utility suite*
+<br>
+`Python` `CLI` `Automation`
+
+#### 🎨 **Pixel Forge** 
+*Pixel art creation tool*
+<br>
+`JavaScript` `Canvas API` `React`
+
+#### 🔮 **AI Assistant**
+*Smart coding companion*
+<br>
+`Python` `Machine Learning` `NLP`
+
+</div>
 
 </div>
 
@@ -233,20 +193,19 @@ print(dev.get_motivation())
 
 ### **🌐 Digital Presence**
 
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=000000)](mailto:shivakaryt@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=000000)](https://www.linkedin.com/in/YOUR_LINKEDIN)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white&labelColor=000000)](https://twitter.com/YOUR_TWITTER)
-[![Itch.io](https://img.shields.io/badge/Itch.io-FA5C5C?style=for-the-badge&logo=itch.io&logoColor=white&labelColor=000000)](https://cosmic-games-studio.itch.io/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-8A2BE2?style=for-the-badge&logo=google-chrome&logoColor=white&labelColor=000000)](https://your-portfolio.com)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shivakaryt@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/YOUR_LINKEDIN)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/YOUR_TWITTER)
+[![Itch.io](https://img.shields.io/badge/Itch.io-FA5C5C?style=for-the-badge&logo=itch.io&logoColor=white)](https://cosmic-games-studio.itch.io/)
 
 ### **💌 Communication Preferences**
 
-```yaml
+
 Preferred Contact: Email > LinkedIn > Twitter
 Response Time: Usually within 24 hours
 Collaboration: Open to interesting projects
 Meeting Availability: Flexible across timezones
-```
+
 
 </div>
 
@@ -258,30 +217,12 @@ Meeting Availability: Flexible across timezones
 
 ### **🌟 Personal Trivia**
 
-<table>
-  <tr>
-    <td width="25%" align="center">
-      <h4>😄 Pronouns</h4>
-      <p><b>He/Him</b></p>
-    </td>
-    <td width="25%" align="center">
-      <h4>📍 Location</h4>
-      <p><b>Digital Nomad</b></p>
-    </td>
-    <td width="25%" align="center">
-      <h4>🎯 Focus</h4>
-      <p><b>Game Innovation</b></p>
-    </td>
-    <td width="25%" align="center">
-      <h4>🌟 Status</h4>
-      <p><b>Open to Work</b></p>
-    </td>
-  </tr>
-</table>
+| 😄 Pronouns | 📍 Location | 🎯 Focus | 🌟 Status |
+|:-----------:|:-----------:|:--------:|:---------:|
+| **He/Him** | **Digital Nomad** | **Game Innovation** | **Open to Work** |
 
 ### **⚡ Fun Facts & Hobbies**
 
-```javascript
 const quantumFacts = {
   adventures: "Explored 15+ national parks in 2 years 🏞️",
   gamingPassion: "Started coding to create my own games 🎮",
@@ -293,8 +234,6 @@ const quantumFacts = {
   dreamProject: "Build an educational game that inspires millions 🌍"
 };
 
-console.log(quantumFacts);
-```
 
 </div>
 
@@ -304,7 +243,7 @@ console.log(quantumFacts);
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=footer&animation=fadeIn&fontAlign=70" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=footer&animation=fadeIn" />
 
 ### **🚀 Ready to Create Magic Together?**
 
@@ -324,12 +263,12 @@ I'm always excited to:
 
 If you find my projects interesting, consider giving them a star! It means a lot and helps others discover my work.
 
-```bash
+
 # Clone and explore my repositories
 git clone https://github.com/QuantumBlazeGames/your-repo-name.git
 cd your-repo-name
 # Happy coding! 🚀
-```
+
 
 ---
 
@@ -337,23 +276,8 @@ cd your-repo-name
 
 ### **Thank you for visiting my profile!** 🙏
 
-![GitHub Footer](https://img.shields.io/badge/Made%20with%20%E2%9D%A4%EF%B8%8F%20by-QuantumBlazeGames-8A2BE2?style=for-the-badge)
+![Made with Love](https://img.shields.io/badge/Made%20with%20%E2%9D%A4%EF%B8%8F%20by-QuantumBlazeGames-8A2BE2?style=for-the-badge)
 
-*Last updated: {{DATE}} • Keep coding, keep creating! 🌟*
+*Last updated: 2024 • Keep coding, keep creating! 🌟*
 
 </div>
-```
-
-This enhanced README features:
-
-- **Professional header** with typing animation
-- **Comprehensive tech stack** with colorful badges
-- **Advanced GitHub stats** with multiple widgets
-- **Project showcases** with proper formatting
-- **Interactive elements** and code blocks
-- **Personal branding** throughout
-- **Mobile-responsive** design
-- **Call-to-action** sections
-- **Visual hierarchy** for better readability
-
-Just copy and paste this into your README.md file, and replace the placeholder content with your actual information!
