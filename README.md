@@ -1,4 +1,8 @@
+# Fixed GitHub README.md
 
+Here's the corrected version with proper formatting and working elements:
+
+```markdown
 <!--
 **QuantumBlazeGames/QuantumBlazeGames** is a ✨ _special_ ✨ repository because its `README.md` appears on your GitHub profile.
 -->
@@ -32,7 +36,7 @@
 
 <div align="center">
 
-
+```python
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
@@ -64,7 +68,7 @@ class QuantumDeveloper:
 dev = QuantumDeveloper()
 print(dev.introduce())
 print(dev.get_motivation())
-
+```
 
 </div>
 
@@ -200,12 +204,12 @@ print(dev.get_motivation())
 
 ### **💌 Communication Preferences**
 
-
+```
 Preferred Contact: Email > LinkedIn > Twitter
 Response Time: Usually within 24 hours
 Collaboration: Open to interesting projects
 Meeting Availability: Flexible across timezones
-
+```
 
 </div>
 
@@ -223,6 +227,7 @@ Meeting Availability: Flexible across timezones
 
 ### **⚡ Fun Facts & Hobbies**
 
+```javascript
 const quantumFacts = {
   adventures: "Explored 15+ national parks in 2 years 🏞️",
   gamingPassion: "Started coding to create my own games 🎮",
@@ -233,7 +238,7 @@ const quantumFacts = {
   secretTalent: "Can solve a Rubik's cube in under 2 minutes 🎯",
   dreamProject: "Build an educational game that inspires millions 🌍"
 };
-
+```
 
 </div>
 
@@ -263,12 +268,12 @@ I'm always excited to:
 
 If you find my projects interesting, consider giving them a star! It means a lot and helps others discover my work.
 
-
+```bash
 # Clone and explore my repositories
 git clone https://github.com/QuantumBlazeGames/your-repo-name.git
 cd your-repo-name
 # Happy coding! 🚀
-
+```
 
 ---
 
@@ -281,3 +286,4 @@ cd your-repo-name
 *Last updated: 2024 • Keep coding, keep creating! 🌟*
 
 </div>
+```
