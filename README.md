@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Animated Header -->
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=45&duration=4000&pause=1000&color=8A2BE2&center=true&vCenter=true&width=600&height=70&lines=Hello+World!+👋;I'm+Quantum+🚀;Game+Developer+🎮;Passionate+Coder+💻" alt="Typing Animation" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=45&duration=4000&pause=1000&color=8A2BE2&center=true&vCenter=true&width=600&height=70&lines=Hello+World!+👋;🔥 I'm+QuantumBlaze+🚀;Game+Developer+🎮;Passionate+Coder+💻" alt="Typing Animation" />
 
 <!-- Profile Banner -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=header&animation=fadeIn&fontAlign=70" />
@@ -36,10 +36,10 @@
 
 ### 🛠️ **Skills & Expertise**
 
-**Programming Languages:** C++, Python, JavaScript, C#  
-**Game Engines:** Unreal Engine 5, Unity  
-**Development Tools:** Git, VS Code, Blender, Adobe Suite  
-**Areas of Interest:** Game Development, AI/ML, VR/AR, Open Source  
+**Programming Languages:** C, C++, Java, Python, JavaScript, C#  
+**Game Engines:** Unreal Engine 5, Unity , Godot
+**Development Tools:** Git, Visual Studio, VS Code, JetBrains IDEs, Blender, Adobe Suite 
+**Areas of Interest:** Game Development, AI/ML, VR/AR, Open Source, Cyber Security
 
 ### 🚀 **My Approach**
 
@@ -55,15 +55,18 @@
 <div align="center">
 
 ### **💻 Programming Languages**
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+
 
 ### **🎮 Game Development**
 ![Unreal Engine](https://img.shields.io/badge/Unreal_Engine-0E1128?style=for-the-badge&logo=unrealengine&logoColor=white)
 ![Unity](https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white)
+![Godot](https://img.shields.io/badge/Godot-478CBF?style=for-the-badge&logo=godot-engine&logoColor=white)
 ![Blender](https://img.shields.io/badge/Blender-F5792A?style=for-the-badge&logo=blender&logoColor=white)
 
 ### **🌐 Web Technologies**
@@ -74,6 +77,8 @@
 
 ### **🛠️ Tools & Platforms**
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91?style=for-the-badge&logo=visual-studio&logoColor=white)
+![JetBrains](https://img.shields.io/badge/JetBrains-000000?style=for-the-badge&logo=jetbrains&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
@@ -255,3 +260,5 @@ If you find my projects interesting, consider giving them a star! It means a lot
 *Last updated: 2024 • Keep coding, keep creating! 🌟*
 
 </div>
+
+
