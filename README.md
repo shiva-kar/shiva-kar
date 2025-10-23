@@ -4,7 +4,7 @@
 
 <!-- Animated Header -->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=45&duration=4000&pause=1000&color=8A2BE2&center=true&vCenter=true&width=700&height=80&lines=Hello+World!+👋;🔥+I'm+QuantumBlaze+🚀;Game+Developer+🎮;Passionate+Coder+💻" alt="Typing Animation" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=45&duration=4000&pause=1000&color=8A2BE2&center=true&vCenter=true&width=700&height=80&lines=Hello+World!+👋;🔥+I'm+Shiva+aka+QuantumBlaze+🚀;Game+Developer+🎮;Passionate+Coder+💻" alt="Typing Animation" />
 </p>
 
 <!-- Profile Banner -->
@@ -33,7 +33,7 @@
 
 ### 🎯 **Developer Profile**
 
-**Name:** Quantum  
+**Name:** Shiva Kar
 **Title:** Game Developer & Software Engineer  
 **Mission:** Creating immersive gaming experiences  
 **Philosophy:** Code with purpose, build with passion  
