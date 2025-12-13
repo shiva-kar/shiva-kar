@@ -1,102 +1,129 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0a192f&height=200&section=header&text=Shiva%20Kar&fontSize=70&fontColor=64ffda&animation=fadeIn&fontAlignY=35" alt="Header" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0a192f&height=220&section=header&text=Shiva%20Kar&fontSize=70&fontColor=64ffda&animation=fadeIn&fontAlignY=38&desc=BCA%20Student%20%7C%20Software%20Developer%20%7C%20Logic%20Builder&descAlignY=55&descSize=20" alt="Header" width="100%" />
 
-<a href="https://git.io/typing-svg">
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=64FFDA&center=true&vCenter=true&width=800&lines=BCA+Student+@+Amity+University+Online;Building+Logic+with+C+%26+C%2B%2B;Focusing+on+Backend+Architecture;Structuring+Logic,+One+Line+at+a+Time." alt="Typing SVG" />
-</a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=26&duration=2500&pause=1000&color=64FFDA&center=true&vCenter=true&width=800&lines=Current+Status:+BCA+Student+@+Amity+University;Core+Focus:+C%2FC%2B%2B,+Data+Structures,+%26+Logic;Aspiring+Software+Developer;Structuring+Complex+Logic,+One+Bit+at+a+Time." alt="Typing SVG" /></a>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/shiva-kar/">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="mailto:sksmarttech48@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Contact_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-  <a href="https://github.com/shiva-kar">
-    <img src="https://img.shields.io/badge/GitHub-Follow_Me-181717?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
+<a href="https://www.linkedin.com/in/shiva-kar/"><img src="https://img.shields.io/badge/LinkedIn-Connect_on_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a><a href="mailto:sksmarttech48@gmail.com"><img src="https://img.shields.io/badge/Email-sksmarttech48%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a><a href="https://github.com/shiva-kar"><img src="https://img.shields.io/badge/GitHub-Follow_My_Work-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
 </p>
 
 </div>
----
 
-### 👨‍💻 **About Me**
-
-> *"I don't just write code; I write logic."*
-
-I am a disciplined **Bachelor of Computer Applications (BCA)** student at **Amity University Online**, currently in my **1st Semester**. 
-
-While many beginners rush into web frameworks, I have chosen a different path. I am focusing strictly on the **Foundations of Computer Science**. I believe that a deep understanding of **Memory Management, Pointers, and Low-Level Algorithms** in C and C++ is the only way to build truly scalable and efficient software.
-
-* 🎓 **Education:** Pursuing BCA (2025-2028)
-* 🧠 **Core Philosophy:** Master the basics (C/C++) before moving to the abstract.
-* 🔭 **Current Focus:** Data Structures & Algorithms (DSA), Digital Electronics.
-* 📍 **Location:** Hojai, Assam, India.
+<br>
 
 ---
 
-### 🛠️ **Technical Arsenal**
+### 👨‍💻 **Professional Profile**
+
+> *"Discipline is the bridge between goals and accomplishment."*
+
+I am a highly motivated **Bachelor of Computer Applications (BCA)** student at **Amity University Online**, aiming to bridge the gap between theoretical computer science and practical software engineering. 
+
+Unlike many who rush into high-level frameworks, I have dedicated my early academic career to mastering the **Fundamentals of Computing**. My background in **Science (PCM)** provided me with the mathematical rigor required for algorithm design, which I now apply to **C and C++ Programming**.
+
+* **🎓 Current Pursuit:** Bachelor of Computer Applications (Sem 1)
+* **🧠 Technical Philosophy:** I prioritize **Memory Management**, **Pointer Logic**, and **Structured Programming** over temporary trends.
+* **💼 Career Goal:** Seeking internship opportunities to apply my knowledge of **Backend Logic** and **Computer Architecture** in a real-world environment.
+* **📍 Base of Operations:** Hojai, Assam, India.
+
+<br>
+
+---
+
+### 🛠️ **Technical Arsenal & Skills**
+
+My skill set is built on a foundation of logic and low-level understanding of how computers process data.
 
 <div align="center">
 
-| **Core Languages** | **Computer Science Concepts** | **Tools & Environment** |
+| **💻 Programming Languages** | **🧠 Computer Science Fundamentals** | **⚙️ Tools & Platforms** |
 |:---:|:---:|:---:|
-| ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) | ![Algorithms](https://img.shields.io/badge/Algorithms-Logic-red?style=for-the-badge) | ![VS Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) |
-| ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) | ![Data Structures](https://img.shields.io/badge/Data%20Structures-Binary-green?style=for-the-badge) | ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) |
-| **OOP & Syntax** | **Memory Management** | **Windows / CMD** |
+| ![C](https://img.shields.io/badge/C_Language-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) <br> **(Pointers, Arrays, Memory)** | ![Logic](https://img.shields.io/badge/Logic-Algorithm_Design-red?style=for-the-badge) <br> **(Flowcharts & Pseudocode)** | ![VS Code](https://img.shields.io/badge/IDE-VS_Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) |
+| ![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) <br> **(OOP Concepts, Classes)** | ![Binary](https://img.shields.io/badge/System-Binary_%2F_Hex-green?style=for-the-badge) <br> **(Number Systems & Gates)** | ![Office](https://img.shields.io/badge/Suite-MS_Office-D83B01?style=for-the-badge&logo=microsoft-office&logoColor=white) |
 
 </div>
 
----
-
-### 🏆 **Featured Academic Projects**
-
-I build projects to test my understanding of logic, not just to copy code.
-
-| **Project Name** | **Tech Stack** | **What I Learned** |
-| :--- | :--- | :--- |
-| **📐 Pattern Generation Engine** | `C`, `Nested Loops` | Designed a logic-heavy console application that generates complex visual patterns (pyramids, diamonds). **Key Skill:** Advanced Control Flow & Loop Management. |
-| **🧮 Algorithmic Logic Suite** | `C`, `Math Lib` | Automated solvers for Prime validation, Factorials, and Fibonacci series. **Key Skill:** Converting mathematical formulas into executable code. |
-| **🗃️ Data Structure Impl.** | `C`, `Arrays`, `Strings` | Built manual implementations of string manipulation and 2D array storage systems. **Key Skill:** understanding how data is stored in contiguous memory. |
+<br>
 
 ---
 
-### 📊 **GitHub Statistics**
+### 🧪 **Featured Academic Projects**
+
+I believe in "Learning by Doing." Below are key projects where I have applied my theoretical knowledge:
+
+#### 📐 **1. Dynamic Pattern Generation Engine**
+> *Focus: Control Flow & Nested Loops*
+* **Description:** A console-based application designed to generate complex, dynamic visual patterns (Pyramids, Diamonds, Pascal's Triangle) based on user input.
+* **Technical Achievement:** Demonstrated mastery of `Nested Loops`, conditional logic, and output formatting in C.
+
+#### 🧮 **2. Algorithmic Logic Suite**
+> *Focus: Mathematical Computation*
+* **Description:** A comprehensive toolset for automating mathematical solutions. Includes modules for **Prime Number Validation**, **Factorial Calculation**, and **Fibonacci Series Generation**.
+* **Technical Achievement:** focused on optimizing algorithms for speed and handling edge cases in input data.
+
+#### 🗃️ **3. Low-Level Data Structure Implementation**
+> *Focus: Memory & Storage Logic*
+* **Description:** Manual implementation of data storage systems using **1D & 2D Arrays** and complex **String Manipulation** functions without relying on high-level libraries.
+* **Technical Achievement:** Deepened understanding of how data is stored in contiguous memory blocks.
+
+<br>
+
+---
+
+### 📊 **GitHub Analytics**
 
 <div align="center">
-  <p>
-    <img src="https://github-readme-stats.vercel.app/api?username=shiva-kar&show_icons=true&locale=en&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="shiva-kar" width="48%" />
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=shiva-kar&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="shiva-kar" width="48%" />
-  </p>
-  <p>
-    <img src="https://github-readme-stats.vercel.app/api/top-langs?username=shiva-kar&show_icons=true&locale=en&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="shiva-kar" />
-  </p>
+  <img src="https://github-readme-stats.vercel.app/api?username=shiva-kar&show_icons=true&locale=en&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Shiva's GitHub Stats" width="48%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=shiva-kar&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Shiva's Streak" width="48%" />
+  <br>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=shiva-kar&show_icons=true&locale=en&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Languages" />
 </div>
 
----
-
-### ⚡ **Soft Skills & Competencies**
-
-* **🧠 Analytical Thinking:** I enjoy breaking down complex problems into small, solvable logical steps.
-* **🧘‍♂️ Self-Discipline:** Successfully managing a rigorous **Online Degree** requires high motivation and time management.
-* **🔍 Debugging:** I don't just fix errors; I analyze *why* the logic failed.
-* **🗣️ Communication:** Fluent in **English (Professional)**, Hindi, Assamese, and Bengali.
+<br>
 
 ---
+
+### 🎓 **Education History**
+
+| **Degree / Certification** | **Institution** | **Timeline** | **Key Details** |
+| :--- | :--- | :--- | :--- |
+| **Bachelor of Computer Applications (BCA)** | **Amity University Online** | *2025 – 2028 (Expected)* | • **Status:** Semester 1<br>• **Coursework:** Problem Solving using C, Digital Electronics, Computer Fundamentals.<br>• **Soft Skills:** Remote Collaboration, Digital Literacy. |
+| **Higher Secondary (Class XII)** | **Deshabandhu Bidyapith** | *Completed 2025* | • **Stream:** Science (PCM & Computer Science)<br>• **Focus:** C++ Programming, Introductory Data Structures, Mathematics. |
+
+<br>
+
+---
+
+### ⚡ **Competencies & Languages**
 
 <div align="center">
 
-### 📫 **Let's Connect**
+**🗣️ Languages Spoken**
+<br>
+🇬🇧 English (Professional) • 🇮🇳 Hindi (Native) • 🇮🇳 Assamese (Native) • 🇧🇩 Bengali (Conversational)
 
-*I am currently open to **Internships** and **Entry-Level Opportunities** where I can apply my C/C++ knowledge.*
+<br>
 
-<a href="mailto:sksmarttech48@gmail.com">
-<img src="https://img.shields.io/badge/Gmail-sksmarttech48%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
-<a href="https://www.linkedin.com/in/shiva-kar/">
-<img src="https://img.shields.io/badge/LinkedIn-Shiva%20Kar-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
+**🧠 Soft Skills**
+<br>
+Analytical Thinking • Self-Discipline (Online Learning) • Logical Troubleshooting • Technical Documentation
+
+</div>
+
+<br>
+
+---
+
+### 📫 **Contact & Availability**
+
+*I am currently available for **Internships** and **Freelance Projects**.*
+
+<div align="center">
+
+<a href="mailto:sksmarttech48@gmail.com"><img src="https://img.shields.io/badge/Email-sksmarttech48%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a><a href="https://www.linkedin.com/in/shiva-kar/"><img src="https://img.shields.io/badge/LinkedIn-Shiva_Kar-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+
+**📍 Address:** Krishna Nagar, Hojai, Assam – 782435, India
 
 <br><br>
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0a192f&height=80&section=footer&animation=fadeIn" width="100%"/>
