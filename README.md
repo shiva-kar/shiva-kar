@@ -1,11 +1,13 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0a192f&height=220&section=header&text=Shiva%20Kar&fontSize=70&fontColor=64ffda&animation=fadeIn&fontAlignY=38&desc=BCA%20Student%20%7C%20Computer%20Science%20Enthusiast&descAlignY=55&descSize=22" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0a192f&height=220&section=header&text=Shiva%20Kar&fontSize=70&fontColor=64ffda&animation=fadeIn&fontAlignY=38&desc=BCA%20Student%20%7C%20Full-Stack%20Developer&descAlignY=55&descSize=22" width="100%"/>
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&duration=2500&pause=1000&color=64FFDA&center=true&vCenter=true&width=800&lines=Current+Semester%3A+BCA+Sem+1+%40+Amity+Online;Focus%3A+C+Language+%7C+Data+Structures+%7C+Algorithms;Building+Strong+Fundamentals+in+Computer+Science" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&duration=2500&pause=1000&color=64FFDA&center=true&vCenter=true&width=800&lines=BCA+Sem+1+%40+Amity+University+Online;Building+with+Next.js+%7C+TypeScript+%7C+Tailwind;Strong+Fundamentals+in+C%2FC%2B%2B+%26+DSA;Open+to+Internship+Opportunities" alt="Typing SVG" /></a>
 
 <p align="center">
-<a href="https://www.linkedin.com/in/shiva-kar/"><img src="https://img.shields.io/badge/LinkedIn-Connect_on_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a><a href="https://github.com/shiva-kar"><img src="https://img.shields.io/badge/GitHub-Follow_on_GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+<a href="https://www.linkedin.com/in/shiva-kar/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="https://github.com/shiva-kar"><img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+<a href="https://shiva-kar.github.io"><img src="https://img.shields.io/badge/Portfolio-Visit-64ffda?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"/></a>
 </p>
 
 </div>
@@ -18,13 +20,11 @@
 
 > *"Discipline is the bridge between goals and accomplishment."*
 
-I am a highly motivated **Bachelor of Computer Applications (BCA)** student at **Amity University Online**, aiming to bridge the gap between theoretical computer science and practical software engineering. My focus is on building a robust foundation in programming logic, data structures, and system-level understanding.
-
-Unlike many who rush into high-level frameworks, I have dedicated my early academic career to mastering the **Fundamentals of Computing**. My background in **Science (PCM)** provided me with the mathematical rigor necessary to excel in algorithms and computational thinking.
+I am a highly motivated **Bachelor of Computer Applications (BCA)** student at **Amity University Online**, passionate about bridging theoretical computer science with practical software engineering. My journey spans from mastering **low-level programming fundamentals** to building **modern web applications** with cutting-edge technologies.
 
 * **🎓 Current Pursuit:** Bachelor of Computer Applications (Sem 1)
-* **🧠 Technical Philosophy:** I prioritize **Memory Management**, **Pointer Logic**, and **Structured Programming** over temporary trends.
-* **💼 Career Goal:** Seeking internship opportunities to apply my knowledge of **Backend Logic** and **Computer Architecture** in a real-world environment.
+* **🧠 Technical Philosophy:** Strong foundation in **Memory Management**, **Pointer Logic**, and **Structured Programming**, now expanding into **Modern Web Development**
+* **💼 Career Goal:** Seeking internship opportunities to apply my knowledge of **Full-Stack Development** and **System Design** in a real-world environment.
 * **📍 Base of Operations:** Hojai, Assam, India.
 
 <br>
@@ -33,14 +33,31 @@ Unlike many who rush into high-level frameworks, I have dedicated my early acade
 
 ### 🛠️ **Technical Arsenal & Skills**
 
-My skill set is built on a foundation of logic and low-level understanding of how computers process data.
+My skill set combines strong programming fundamentals with modern web development expertise.
 
 <div align="center">
 
-| **💻 Programming Languages** | **🧠 Computer Science Fundamentals** | **⚙️ Tools & Platforms** |
+| **💻 Programming Languages** | **🌐 Web Technologies** | **⚙️ Tools & Platforms** |
 |:---:|:---:|:---:|
-| ![C](https://img.shields.io/badge/C_Language-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) <br> **(Pointers, Arrays, Memory)** | ![Logic](https://img.shields.io/badge/Logic-Algorithmic_Thinking-blueviolet?style=for-the-badge) <br> **(Flowcharts, Pseudocode)** | ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white) |
-| ![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) <br> **(OOP Concepts, Classes)** | ![Binary](https://img.shields.io/badge/System-Binary_%26_Number_Systems-orange?style=for-the-badge) <br> **(Conversions, Boolean Logic)** | ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) |
+| ![C](https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) | ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) | ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white) |
+| ![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) | ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) |
+| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) | ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black) | ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white) |
+| | ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) | ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white) |
+
+</div>
+
+<br>
+
+#### 🧠 **Core Competencies**
+
+<div align="center">
+
+![Data Structures](https://img.shields.io/badge/Data_Structures-Arrays%2C_Strings-blueviolet?style=flat-square)
+![Algorithms](https://img.shields.io/badge/Algorithms-Logic_%26_Flowcharts-blueviolet?style=flat-square)
+![State Management](https://img.shields.io/badge/State_Management-React_Hooks-61DAFB?style=flat-square)
+![Responsive Design](https://img.shields.io/badge/Responsive_Design-Mobile_First-38B2AC?style=flat-square)
+![Component Architecture](https://img.shields.io/badge/Component_Architecture-Reusable_UI-orange?style=flat-square)
+![PDF Generation](https://img.shields.io/badge/PDF_Generation-Dynamic_Docs-red?style=flat-square)
 
 </div>
 
@@ -48,9 +65,20 @@ My skill set is built on a foundation of logic and low-level understanding of ho
 
 ---
 
-### 🧪 **Featured Academic Projects**
+### 🧪 **Featured Projects**
 
 I believe in "Learning by Doing." Below are key projects where I have applied my theoretical knowledge:
+
+#### ⭐ **Resume Builder Application** *(Featured Project)*
+> *Focus: Modern Web Development & SaaS Architecture*
+
+<a href="https://github.com/shiva-kar/resume-builder"><img src="https://img.shields.io/badge/🔗_View_Project-GitHub-181717?style=for-the-badge&logo=github" alt="View Project"/></a>
+
+* **Description:** A professional SaaS-level resume builder with **real-time PDF preview**, **drag-and-drop sections**, and **multiple templates**. Built with modern web technologies.
+* **Tech Stack:** `Next.js 14` `TypeScript` `Tailwind CSS` `React Hooks` `State Management`
+* **Technical Achievement:** Implemented component-based architecture, complex state management, responsive design, and dynamic PDF generation.
+
+---
 
 #### 📐 **1. Dynamic Pattern Generation Engine**
 > *Focus: Control Flow & Nested Loops*
@@ -62,10 +90,10 @@ I believe in "Learning by Doing." Below are key projects where I have applied my
 * **Description:** A comprehensive toolset for automating mathematical solutions. Includes modules for **Prime Number Validation**, **Factorial Calculation**, and **Fibonacci Series Generation**.
 * **Technical Achievement:** Focused on optimizing algorithms for speed and handling edge cases in input data.
 
-#### 📄 **3. Resume Builder Application**
-> *Focus: Modern Web Development & SaaS Architecture*
-* **Description:** A professional SaaS-level resume builder with real-time PDF preview, drag-and-drop sections, and multiple templates. Built with **Next.js 14**, **TypeScript** & **Tailwind CSS**.
-* **Technical Achievement:** Implemented component-based architecture, state management, and responsive design principles using modern web technologies. [View Project](https://github.com/shiva-kar/resume-builder)
+#### 🗃️ **3. Data Structure Implementation**
+> *Focus: Memory & Storage Logic*
+* **Description:** Manual implementation of data storage systems using **1D & 2D Arrays** and complex **String Manipulation** functions without relying on high-level libraries.
+* **Technical Achievement:** Deepened understanding of how data is stored in contiguous memory blocks.
 
 <br>
 
@@ -89,7 +117,7 @@ I believe in "Learning by Doing." Below are key projects where I have applied my
 | **Degree / Certification** | **Institution** | **Timeline** | **Key Details** |
 | :--- | :--- | :--- | :--- |
 | **Bachelor of Computer Applications (BCA)** | **Amity University Online** | *2025 – 2028 (Expected)* | • **Status:** Semester 1<br>• **Coursework:** Problem Solving using C, Digital Electronics, Mathematics |
-| **Higher Secondary (Class XII)** | **Deshabandhu Bidyapith** | *Completed 2025* | • **Stream:** Science (PCM & Computer Science)<br>• **Focus:** C++ Programming, Introductory Data Structures |
+| **Higher Secondary (Class XII)** | **Deshabandhu Bidyapith** | *Completed 2025* | • **Stream:** Science (PCM & Computer Science)<br>• **Focus:** C++ Programming, Data Structures |
 
 <br>
 
@@ -107,7 +135,7 @@ I believe in "Learning by Doing." Below are key projects where I have applied my
 
 **🧠 Soft Skills**
 <br>
-Analytical Thinking • Self-Discipline (Online Learning) • Logical Troubleshooting • Technical Documentation
+Analytical Thinking • Self-Discipline • Logical Troubleshooting • Technical Documentation • Project Management • Clean Code Practices
 
 </div>
 
@@ -121,7 +149,9 @@ Analytical Thinking • Self-Discipline (Online Learning) • Logical Troublesho
 
 <div align="center">
 
-<a href="mailto:sksmarttech48@gmail.com"><img src="https://img.shields.io/badge/Email-sksmarttech48%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a><a href="https://www.linkedin.com/in/shiva-kar/"><img src="https://img.shields.io/badge/LinkedIn-Shiva_Kar-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="mailto:sksmarttech48@gmail.com"><img src="https://img.shields.io/badge/Email-sksmarttech48%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+<a href="https://www.linkedin.com/in/shiva-kar/"><img src="https://img.shields.io/badge/LinkedIn-Shiva_Kar-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="https://shiva-kar.github.io"><img src="https://img.shields.io/badge/Portfolio-shiva--kar.github.io-64ffda?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"/></a>
 
 **📍 Address:** Krishna Nagar, Hojai, Assam – 782435, India
 
