@@ -1,131 +1,126 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0a192f&height=220&section=header&text=Shiva%20Kar&fontSize=70&fontColor=64ffda&animation=fadeIn&fontAlignY=38&desc=BCA%20Student%20%7C%20Software%20Developer%20%7C%20Logic%20Builder&descAlignY=55&descSize=20" alt="Header" width="100%" />
+<!-- Dynamic Typing SVG -->
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=3B82F6&center=true&vCenter=true&random=false&width=600&height=70&lines=Hi+%F0%9F%91%8B%2C+I'm+Shiva+Kar;Full+Stack+Developer;System+Design+Enthusiast;Open+Source+Contributor" alt="Typing SVG" />
+</a>
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=26&duration=2500&pause=1000&color=64FFDA&center=true&vCenter=true&width=800&lines=Current+Status:+BCA+Student+@+Amity+University;Core+Focus:+C%2FC%2B%2B,+Data+Structures,+%26+Logic;Aspiring+Software+Developer;Structuring+Complex+Logic,+One+Bit+at+a+Time." alt="Typing SVG" /></a>
-
-<p align="center">
-<a href="https://www.linkedin.com/in/shiva-kar/"><img src="https://img.shields.io/badge/LinkedIn-Connect_on_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a><a href="mailto:sksmarttech48@gmail.com"><img src="https://img.shields.io/badge/Email-sksmarttech48%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a><a href="https://github.com/shiva-kar"><img src="https://img.shields.io/badge/GitHub-Follow_My_Work-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
-</p>
-
-</div>
-
-<br>
-
----
-
-### 👨‍💻 **Professional Profile**
-
-> *"Discipline is the bridge between goals and accomplishment."*
-
-I am a highly motivated **Bachelor of Computer Applications (BCA)** student at **Amity University Online**, aiming to bridge the gap between theoretical computer science and practical software engineering. 
-
-Unlike many who rush into high-level frameworks, I have dedicated my early academic career to mastering the **Fundamentals of Computing**. My background in **Science (PCM)** provided me with the mathematical rigor required for algorithm design, which I now apply to **C and C++ Programming**.
-
-* **🎓 Current Pursuit:** Bachelor of Computer Applications (Sem 1)
-* **🧠 Technical Philosophy:** I prioritize **Memory Management**, **Pointer Logic**, and **Structured Programming** over temporary trends.
-* **💼 Career Goal:** Seeking internship opportunities to apply my knowledge of **Backend Logic** and **Computer Architecture** in a real-world environment.
-* **📍 Base of Operations:** Hojai, Assam, India.
-
-<br>
-
----
-
-### 🛠️ **Technical Arsenal & Skills**
-
-My skill set is built on a foundation of logic and low-level understanding of how computers process data.
-
-<div align="center">
-
-| **💻 Programming Languages** | **🧠 Computer Science Fundamentals** | **⚙️ Tools & Platforms** |
-|:---:|:---:|:---:|
-| ![C](https://img.shields.io/badge/C_Language-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) <br> **(Pointers, Arrays, Memory)** | ![Logic](https://img.shields.io/badge/Logic-Algorithm_Design-red?style=for-the-badge) <br> **(Flowcharts & Pseudocode)** | ![VS Code](https://img.shields.io/badge/IDE-VS_Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) |
-| ![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) <br> **(OOP Concepts, Classes)** | ![Binary](https://img.shields.io/badge/System-Binary_%2F_Hex-green?style=for-the-badge) <br> **(Number Systems & Gates)** | ![Office](https://img.shields.io/badge/Suite-MS_Office-D83B01?style=for-the-badge&logo=microsoft-office&logoColor=white) |
+<!-- Profile Views Counter -->
+<img src="https://komarev.com/ghpvc/?username=shiva-kar&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
 
 </div>
 
-<br>
+---
+
+## 🚀 About Me
+
+I'm a passionate **Full Stack Developer** with expertise in building scalable web applications and distributed systems. I love turning complex problems into simple, beautiful, and intuitive solutions.
+
+- 🔭 Currently working on **cloud-native applications** and **microservices architecture**
+- 🌱 Learning **System Design**, **DevOps practices**, and **AI/ML integrations**
+- 👯 Looking to collaborate on **open-source projects** and **innovative startups**
+- 💬 Ask me about **JavaScript/TypeScript**, **React**, **Node.js**, **Python**, and **System Design**
+- ⚡ Fun fact: I debug with console.log and I'm not ashamed! 😄
 
 ---
 
-### 🧪 **Featured Academic Projects**
-
-I believe in "Learning by Doing." Below are key projects where I have applied my theoretical knowledge:
-
-#### 📐 **1. Dynamic Pattern Generation Engine**
-> *Focus: Control Flow & Nested Loops*
-* **Description:** A console-based application designed to generate complex, dynamic visual patterns (Pyramids, Diamonds, Pascal's Triangle) based on user input.
-* **Technical Achievement:** Demonstrated mastery of `Nested Loops`, conditional logic, and output formatting in C.
-
-#### 🧮 **2. Algorithmic Logic Suite**
-> *Focus: Mathematical Computation*
-* **Description:** A comprehensive toolset for automating mathematical solutions. Includes modules for **Prime Number Validation**, **Factorial Calculation**, and **Fibonacci Series Generation**.
-* **Technical Achievement:** focused on optimizing algorithms for speed and handling edge cases in input data.
-
-#### 🗃️ **3. Low-Level Data Structure Implementation**
-> *Focus: Memory & Storage Logic*
-* **Description:** Manual implementation of data storage systems using **1D & 2D Arrays** and complex **String Manipulation** functions without relying on high-level libraries.
-* **Technical Achievement:** Deepened understanding of how data is stored in contiguous memory blocks.
-
-<br>
-
----
-
-### 📊 **GitHub Analytics**
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=shiva-kar&show_icons=true&locale=en&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Shiva's GitHub Stats" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=shiva-kar&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Shiva's Streak" width="48%" />
-  <br>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=shiva-kar&show_icons=true&locale=en&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Languages" />
-</div>
-
-<br>
-
----
-
-### 🎓 **Education History**
-
-| **Degree / Certification** | **Institution** | **Timeline** | **Key Details** |
-| :--- | :--- | :--- | :--- |
-| **Bachelor of Computer Applications (BCA)** | **Amity University Online** | *2025 – 2028 (Expected)* | • **Status:** Semester 1<br>• **Coursework:** Problem Solving using C, Digital Electronics, Computer Fundamentals.<br>• **Soft Skills:** Remote Collaboration, Digital Literacy. |
-| **Higher Secondary (Class XII)** | **Deshabandhu Bidyapith** | *Completed 2025* | • **Stream:** Science (PCM & Computer Science)<br>• **Focus:** C++ Programming, Introductory Data Structures, Mathematics. |
-
-<br>
-
----
-
-### ⚡ **Competencies & Languages**
+## 🛠️ Tech Stack
 
 <div align="center">
 
-**🗣️ Languages Spoken**
-<br>
-🇬🇧 English (Professional) • 🇮🇳 Hindi (Native) • 🇮🇳 Assamese (Native) • 🇧🇩 Bengali (Conversational)
+### Languages
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 
-<br>
+### Frontend
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)
 
-**🧠 Soft Skills**
-<br>
-Analytical Thinking • Self-Discipline (Online Learning) • Logical Troubleshooting • Technical Documentation
+### Backend
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
+
+### Database & Cloud
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
 </div>
 
-<br>
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=shiva-kar&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" height="170"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shiva-kar&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" height="170"/>
+</div>
+
+<div align="center">
+  <img src="https://streak-stats.demolab.com/?user=shiva-kar&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
+</div>
 
 ---
 
-### 📫 **Contact & Availability**
+## 🏆 Featured Projects
 
-*I am currently available for **Internships** and **Freelance Projects**.*
+### 🔥 Highlighted Work
+
+#### 🌐 **1. Distributed Task Scheduler**
+> *Focus: System Design & Scalability*
+* **Description:** A highly available, fault-tolerant task scheduling system built with **Node.js**, **Redis**, and **PostgreSQL**. Handles millions of scheduled jobs with retry mechanisms and dead-letter queues.
+* **Technical Achievement:** Implemented consistent hashing for load distribution and leader election using Redis locks. [View Project](https://github.com/shiva-kar/task-scheduler)
+
+#### 📱 **2. Real-time Collaboration Platform**  
+> *Focus: WebSocket & Event-Driven Architecture*
+* **Description:** A Google Docs-like collaborative editing platform with real-time synchronization, presence indicators, and conflict resolution using **Operational Transformation**.
+* **Technical Achievement:** Achieved <50ms latency for concurrent edits using **Socket.io** and **CRDT** algorithms. [View Project](https://github.com/shiva-kar/collab-platform)
+
+#### 📄 **3. Resume Builder Application**
+> *Focus: Modern Web Development & SaaS Architecture*
+* **Description:** A professional SaaS-level resume builder with real-time PDF preview, drag-and-drop sections, and multiple templates. Built with **Next.js 14**, **TypeScript** & **Tailwind CSS**.
+* **Technical Achievement:** Implemented component-based architecture, state management, and responsive design principles using modern web technologies. [View Project](https://github.com/shiva-kar/resume-builder)
+
+---
+
+## 🎯 Current Focus
+
+```text
+🔹 System Design           ████████████████████░   95%
+🔹 Cloud Architecture      ███████████████████░░   90%
+🔹 Performance Optimization ██████████████████░░░   85%
+🔹 AI/ML Integration       ████████████████░░░░░   75%
+```
+
+Focused on optimizing distributed systems for high throughput and low latency. Currently exploring **event sourcing** patterns and **CQRS** architecture for building resilient microservices.
+
+---
+
+## 📫 Connect With Me
 
 <div align="center">
 
-<a href="mailto:sksmarttech48@gmail.com"><img src="https://img.shields.io/badge/Email-sksmarttech48%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a><a href="https://www.linkedin.com/in/shiva-kar/"><img src="https://img.shields.io/badge/LinkedIn-Shiva_Kar-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/shiva-kar)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/shiva_kar)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://shivakar.dev)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@shivakar.dev)
 
-**📍 Address:** Krishna Nagar, Hojai, Assam – 782435, India
+</div>
 
-<br><br>
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0a192f&height=80&section=footer&animation=fadeIn" width="100%"/>
+---
+
+<div align="center">
+
+### 💡 *"First, solve the problem. Then, write the code."* - John Johnson
+
+⭐ **If you find my work interesting, consider giving a star!** ⭐
 
 </div>
