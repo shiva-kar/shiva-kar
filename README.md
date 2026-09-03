@@ -33,25 +33,15 @@ I occasionally work with **Godot, Unity, and other tools** outside of backend an
 
 ## What I Work With
 
-### Java / Backend
+### Tech Stack
 
-`Java` `Spring Boot` `Spring MVC` `Hibernate` `JPA` `REST APIs` `PostgreSQL` `SQL`
-
-### C++ / Systems
-
-`C++` `C` `Linux` `POSIX` `Sockets` `Networking` `Memory` `System Calls` `Graphics`
-
-### CS
-
-`Data Structures` `Algorithms` `OOP` `Operating Systems` `Computer Networks`
-
-### Tools
-
-`Git` `GitHub` `Docker` `Linux` `Postman` `VS Code`
-
-### Other
-
-`Python` `JavaScript` `TypeScript` `React` `Godot` `Unity` `Blender`
+| Area | Technologies |
+|---|---|
+| **Java / Backend** | `Java` `Spring Boot` `Spring MVC` `Hibernate` `JPA` `REST APIs` `PostgreSQL` `SQL` |
+| **C++ / Systems** | `C++` `C` `Linux` `POSIX` `Sockets` `Networking` `Memory` `System Calls` `Graphics` |
+| **Computer Science** | `Data Structures` `Algorithms` `OOP` `Operating Systems` `Computer Networks` |
+| **Tools** | `Git` `GitHub` `Docker` `Linux` `Postman` `VS Code` |
+| **Other** | `Python` `JavaScript` `TypeScript` `React` `Godot` `Unity` `Blender` |
 
 ---
 
@@ -70,15 +60,15 @@ I occasionally work with **Godot, Unity, and other tools** outside of backend an
 
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=shiva-kar&amp;theme=github_dark&amp;animation=fade" width="42%"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=shiva-kar&amp;theme=github_dark&amp;animation=fade" width="45%"/>
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=shiva-kar&amp;theme=github_dark&amp;animation=fade" width="42%"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=shiva-kar&amp;theme=github_dark&amp;animation=fade" width="45%"/>
 
 </div>
 
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=shiva-kar&amp;theme=github_dark&amp;animation=fade" width="86%"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=shiva-kar&amp;theme=github_dark&amp;animation=fade" width="90%"/>
 
 </div>
 
@@ -86,8 +76,15 @@ I occasionally work with **Godot, Unity, and other tools** outside of backend an
 
 ## Education
 
-**Bachelor of Computer Applications (BCA)**  
-Amity University Online · 2025 – 2028
+| Degree | Institution | Duration |
+|---|---|---|
+| **BCA — Computer Science** | **Amity University Online** | Jul 2025 – Nov 2028 |
+| **Higher Secondary (Class XII) Science (PCM + Computer Science)** | **Deshabandhu Bidyapeeth HS** | Jul 2022 – Mar 2025 |
+| **Secondary Education (Class X)** | **Rabindra Bidyalaya High School** | Jan 2017 – Mar 2022 |
+
+### Relevant Coursework
+
+`Data Structures` `Operating Systems` `DBMS` `Computer Networks` `OOP` `Unix & Shell Programming`
 
 ---
 
@@ -102,14 +99,10 @@ Amity University Online · 2025 – 2028
 
 <div align="center">
 
-<a href="https://shivakar.me">Portfolio</a> •
-<a href="https://linkedin.com/in/shiva-kar">LinkedIn</a> •
-<a href="https://github.com/shiva-kar">GitHub</a> •
-<a href="mailto:sksmarttech48@gmail.com">Email</a> •
-<a href="https://x.com/sk_shivakar">X</a>
-
-<br><br>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0d1117&amp;height=100&amp;section=footer"/>
+[![Portfolio](https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=googlechrome&logoColor=58A6FF)](https://shivakar.me)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=58A6FF)](https://linkedin.com/in/shiva-kar)
+[![GitHub](https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=58A6FF)](https://github.com/shiva-kar)
+[![Email](https://img.shields.io/badge/Email-0D1117?style=for-the-badge&logo=gmail&logoColor=58A6FF)](mailto:sksmarttech48@gmail.com)
+[![X](https://img.shields.io/badge/X-0D1117?style=for-the-badge&logo=x&logoColor=58A6FF)](https://x.com/sk_shivakar)
 
 </div>
