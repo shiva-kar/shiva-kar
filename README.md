@@ -1,5 +1,7 @@
 <div align="center">
 
+<img alt="shiva-kar's GitHub profile" src="dark_mode.svg" width="100%" />
+
 <img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0d1117&amp;height=170&amp;section=header&amp;text=Shiva%20Kar&amp;fontSize=56&amp;fontColor=58A6FF&amp;animation=fadeIn&amp;fontAlignY=38&amp;desc=Java%20Backend%20%7C%20C%2B%2B%20%7C%20Systems%20%7C%20BCA%20Student&amp;descAlignY=62&amp;descSize=18" width="100%"/>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=19&duration=2500&pause=1000&color=58A6FF&center=true&vCenter=true&width=650&lines=Java+Backend+Developer%3BSpring+Boot+%7C+Hibernate+%7C+REST+APIs%3BC%2B%2B+%7C+Systems+Programming%3BData+Structures+%26+Algorithms%3BOpen+Source+Contributor)](https://git.io/typing-svg)
