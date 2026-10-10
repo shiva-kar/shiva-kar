@@ -1,6 +1,10 @@
 <div align="center">
 
-<img alt="shiva-kar's GitHub profile" src="dark_mode.svg" width="100%" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="dark_mode.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="light_mode.svg" />
+  <img alt="shiva-kar's GitHub profile" src="dark_mode.svg" width="100%" />
+</picture>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0d1117&amp;height=170&amp;section=header&amp;text=Shiva%20Kar&amp;fontSize=56&amp;fontColor=58A6FF&amp;animation=fadeIn&amp;fontAlignY=38&amp;desc=Java%20Backend%20%7C%20C%2B%2B%20%7C%20Systems%20%7C%20BCA%20Student&amp;descAlignY=62&amp;descSize=18" width="100%"/>
 
