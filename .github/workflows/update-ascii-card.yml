@@ -1,0 +1,77 @@
+name: Refresh gh-ascii card
+
+on:
+  schedule:
+    # Runs every 6 hours to keep stats, contributions, and uptime fresh
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-card:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Fetch latest SVGs and apply rendering fixes
+        run: |
+          set -euo pipefail
+
+          curl -fL --retry 3 --retry-delay 5 "https://gh.crafter.run/shiva-kar?theme=dark" -o dark_mode.svg.tmp
+          curl -fL --retry 3 --retry-delay 5 "https://gh.crafter.run/shiva-kar?theme=light" -o light_mode.svg.tmp
+
+          python3 - << 'EOF'
+          from pathlib import Path
+          import re
+          import sys
+
+          for name in ("dark_mode.svg", "light_mode.svg"):
+              tmp_path = Path(f"{name}.tmp")
+              content = tmp_path.read_text(encoding="utf-8")
+
+              if not content.lstrip().startswith("<svg") or "</svg>" not in content:
+                  print(f"Error: {name} is not a valid SVG", file=sys.stderr)
+                  sys.exit(1)
+
+              # Fix double-escaped entity bug in gh.crafter.run output
+              content = content.replace("&amp;gt;", "&gt;")
+
+              # Prevent the 52-week contribution sparkline from overflowing the right border
+              content = re.sub(
+                  r'(<text x="540" y="473\.4")(\s+font-family=)',
+                  r'\1 textLength="510" lengthAdjust="spacingAndGlyphs"\2',
+                  content,
+              )
+
+              Path(name).write_text(content, encoding="utf-8")
+              tmp_path.unlink()
+          EOF
+
+      - name: Commit or amend and push if stats changed
+        run: |
+          if git diff --quiet dark_mode.svg light_mode.svg; then
+            echo "No changes in profile stats or info."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dark_mode.svg light_mode.svg
+
+          COMMIT_MSG="chore: update gh-ascii profile card stats [skip ci]"
+          LAST_MSG="$(git log -1 --pretty=%s)"
+
+          if [ "$LAST_MSG" = "$COMMIT_MSG" ]; then
+            echo "Previous commit was a card update — amending to keep commit history clean."
+            git commit --amend --no-edit --reset-author
+            git push --force-with-lease
+          else
+            echo "Creating new card update commit."
+            git commit -m "$COMMIT_MSG"
+            git push
+          fi
