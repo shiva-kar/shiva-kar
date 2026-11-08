@@ -19,15 +19,15 @@
 
 ## About Me
 
-I'm **Shiva Kar**, a BCA student at **Amity University Online**.
+I'm **Shiva Kar**, a BCA Computer Science student at **Amity University Online**.
 
-My main focus is **Java backend development**. I work with **Java, Spring Framework & Spring Boot, Hibernate/JPA, REST APIs, PostgreSQL**, and the tools used to build backend applications and services.
+My primary focus is **Java backend development**, working with **Core Java, Spring Boot, Spring MVC, Hibernate/JPA, REST APIs, PostgreSQL, and Redis**. I'm interested in building maintainable backend applications, designing APIs, managing data reliably, and understanding the engineering behind server-side systems.
 
-I also work with **React, TypeScript and Tailwind CSS**, mainly around frontend development.
+I also work with **React, TypeScript, and Tailwind CSS** for frontend development when needed.
 
-**Data Structures & Algorithms** and core computer science are also a big part of what I study and practice.
+Outside application development, I contribute to **Godot Engine**, working on editor, GUI, GDScript, and web-platform issues within a large C++ codebase. I've submitted 15 pull requests, with **6 merged**.
 
-I occasionally do **C++** for contribution to open source engines like Godot.
+I'm also interested in **systems programming with C**, particularly operating systems, process management, POSIX APIs, and networking.
 
 ---
 
@@ -37,21 +37,21 @@ I occasionally do **C++** for contribution to open source engines like Godot.
 
 | Area | Technologies |
 |---|---|
-| **Java / Backend** | `Java` `Spring Boot` `Spring MVC` `Hibernate` `JPA` `REST APIs` `PostgreSQL` `SQL` `Redis` |
-| **C / Systems** | `C` `Linux` `POSIX` `Sockets` `Networking` `Memory` `System Calls` `Graphics` |
-| **Computer Science** | `Data Structures` `Algorithms` `OOP` `Operating Systems` `Computer Networks` |
-| **Tools** | `Git` `GitHub` `Docker` `Linux` `Postman` `VS Code` `Kafka` |
-| **Other** | `Python` `JavaScript/TypeScript` `React` `Tailwind CSS/CSS`  `HTML` |
+| **Java / Backend** | `Java` `Spring Boot` `Spring MVC` `Spring Security` `Spring Data JPA` `Hibernate` `REST APIs` `JWT` `PostgreSQL` `MySQL` `Redis` `SQL` |
+| **C / Systems** | `C` `Linux` `POSIX` `System Calls` `Processes` `Sockets` `Pipes` `Memory Management` `CMake` |
+| **Computer Science** | `Data Structures` `Algorithms` `OOP` `Operating Systems` `DBMS` `Computer Networks` `Concurrency` |
+| **Tools & Testing** | `Git` `GitHub` `Maven` `Docker` `Docker Compose` `Postman` `JUnit 5` `Mockito` `IntelliJ IDEA` `VS Code` |
+| **Frontend & Other** | `Python` `JavaScript` `TypeScript` `React` `Tailwind CSS` `HTML` |
 
 ---
 
 ## Currently
 
-- Building backend systems with **Java and Spring Boot**
-- Exploring **graphics and rendering**
-- Practicing **DSA and computer science fundamentals**
-- Contributing to **open source**
-- Building and experimenting with different software projects
+- Building backend applications with **Java, Spring Boot, PostgreSQL, and Redis**
+- Working on **REST API design, database persistence, authentication, transactions, and concurrency**
+- Practicing **Data Structures & Algorithms** and strengthening computer science fundamentals
+- Contributing bug fixes to **Godot Engine** and working with its existing codebase
+- Exploring **graphics programming, rendering, and game engine internals**
 
 ---
 
@@ -77,20 +77,20 @@ I occasionally do **C++** for contribution to open source engines like Godot.
 
 | Degree | Institution | Duration |
 |---|---|---|
-| **BCA : Computer Science** | **Amity University Online** | Jul 2025 – Nov 2028 |
-| **Higher Secondary (Class XII) Science (PCM + Computer Science)** | **Deshabandhu Bidyapeeth HS** | Jul 2022 – Mar 2025 |
+| **BCA: Computer Science** | **Amity University Online** | Jul 2025 – Nov 2028 |
+| **Higher Secondary (Class XII), Science (PCM + Computer Science)** | **Deshabandhu Bidyapeeth HS** | Jul 2022 – Mar 2025 |
 | **Secondary Education (Class X)** | **Rabindra Bidyalaya High School** | Jan 2017 – Mar 2022 |
 
 ### Relevant Coursework
 
-`Data Structures` `Operating Systems` `DBMS` `Computer Networks` `OOP` `Java` `Unix & Shell Programming`
+`Object-Oriented Programming (Java)` `Data Structures` `Operating Systems` `DBMS` `Computer Networks` `Unix & Shell Programming`
 
 ---
 
 ## Certifications
 
-- **CS50x** - Introduction to Computer Science
-- **CS50 SQL** - Introduction to Databases with SQL
+- **CS50x** — Introduction to Computer Science
+- **CS50 SQL** — Introduction to Databases with SQL
 
 ---
 
