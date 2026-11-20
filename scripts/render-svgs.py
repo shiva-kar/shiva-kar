@@ -4,7 +4,6 @@
     python scripts/fetch-data.py     # refresh data/profile.json from GitHub
     python scripts/render-svgs.py    # draw the cards + README.md
 
-Profile design adapted from Sagargupta16 (https://github.com/Sagargupta16, MIT licensed).
 Logos: simple-icons (CC0). Fonts: Inter, JetBrains Mono, Archivo Black (SIL OFL), embedded per SVG.
 """
 import base64
@@ -30,13 +29,13 @@ USER = "shiva-kar"
 NAME = "Shiva Kar"
 SUBTITLE = "Java backends, systems in C and Godot Engine"
 STATUS = "BUILDING BACKENDS IN JAVA"
-ABOUT = ("BCA Computer Science student at **Amity University Online**, building **Java backends** with "
-         "**Spring Boot**, **Hibernate/JPA**, **PostgreSQL** and **Redis**. I also work with "
-         "**React**, **TypeScript** and **Tailwind CSS** when needed on the frontend. "
-         "In my own time I contribute bug fixes to **Godot Engine** — working on editor, GUI, "
-         "GDScript and web-platform issues in a large **C++** codebase. I've submitted 15 pull requests, "
-         "with 6 merged. I'm also interested in **systems programming** with **C** — operating systems, "
-         "process management, **POSIX** APIs, networking — and **graphics programming and rendering**.")
+ABOUT = ("BCA Computer Science student at **Amity University Online** (CGPA 8.84/10), building **Java backends** with "
+         "**Spring Boot**, **Hibernate/JPA**, **PostgreSQL**, and **Redis**. I also work with "
+         "**React**, **TypeScript**, and **Tailwind CSS** when needed on the frontend. "
+         "In my own time, I contribute bug fixes to **Godot Engine**, focusing on editor, GUI, "
+         "GDScript, and web-platform issues in a large **C++** codebase (15 pull requests submitted, "
+         "with 7 merged). I am also interested in **systems programming** with **C** (operating systems, "
+         "process management, **POSIX** APIs, networking), as well as **graphics programming and rendering**.")
 TAGS = ["Java Backend", "REST APIs", "Systems Programming", "Open Source"]
 LINKS = {"linkedin": ("LinkedIn", "linkedin", "https://www.linkedin.com/in/shiva-kar/"),
          "email": ("Email", "gmail", "mailto:sksmarttech48@gmail.com"),
@@ -56,7 +55,7 @@ EDU = [("2017", "Class X", "Rabindra Bidyalaya High School", "JAN 2017 TO MAR 20
        ("2022", "Class XII, PCM + CS", "Deshabandhu Bidyapeeth HS", "JUL 2022 TO MAR 2025",
         "Higher Secondary (Class XII), Science (PCM + Computer Science)"),
        ("2025", "BCA, Computer Science", "Amity University Online", "JUL 2025 TO NOV 2028",
-        "BCA: Computer Science")]
+        "BCA: Computer Science (CGPA: 8.84/10)")]
 COURSES = ["Object-Oriented Programming (Java)", "Data Structures", "Operating Systems", "DBMS",
            "Computer Networks", "Unix & Shell Programming"]
 CERTS = [("CS50x", "Introduction to Computer Science", "Harvard University",
@@ -149,6 +148,7 @@ def face_css(k, chars):
 
 
 def t(x, y, s, k="body", size=14, fill=BODY, anchor="start", ls=0.0, extra=""):
+    s = s.replace("\u2014", " - ").replace("\u2013", "-")
     USED.setdefault(k, set()).update(s)
     fam, wt, _ = FONTS[k]
     la = f' letter-spacing="{ls}"' if ls else ""
@@ -157,6 +157,7 @@ def t(x, y, s, k="body", size=14, fill=BODY, anchor="start", ls=0.0, extra=""):
 
 
 def fit(s, k, size, maxw, ls=0.0):
+    s = s.replace("\u2014", " - ").replace("\u2013", "-")
     if tw(s, k, size, ls) <= maxw:
         return s
     while s and tw(s + "…", k, size, ls) > maxw:
@@ -165,6 +166,7 @@ def fit(s, k, size, maxw, ls=0.0):
 
 
 def wrap(s, k, size, maxw, ls=0.0, maxlines=None):
+    s = s.replace("\u2014", " - ").replace("\u2013", "-")
     lines, cur = [], ""
     for word in s.split():
         trial = (cur + " " + word).strip()
@@ -945,13 +947,13 @@ def write_readme():
     snake = (f'<picture>\n  <source media="(prefers-color-scheme: dark)" srcset="{raw}/github-snake-dark.svg" />\n'
              f'  <source media="(prefers-color-scheme: light)" srcset="{raw}/github-snake.svg" />\n'
              f'  <img alt="Contribution snake" src="{raw}/github-snake.svg" width="100%" />\n</picture>')
-    # Neofetch dark/light block — verbatim from old README, must stay at same paths
+    # Neofetch dark/light block: verbatim from old README, must stay at same paths
     neofetch = ('<picture>\n'
                 '  <source media="(prefers-color-scheme: dark)" srcset="dark_mode.svg" />\n'
                 '  <source media="(prefers-color-scheme: light)" srcset="light_mode.svg" />\n'
                 '  <img alt="shiva-kar\'s GitHub profile" src="dark_mode.svg" width="100%" />\n'
                 '</picture>')
-    # Old GitHub summary cards (profile-summary-cards) — stats, repos-per-language and profile-details
+    # Old GitHub summary cards (profile-summary-cards): stats, repos-per-language and profile-details
     summary_cards = ('<div align="center">\n'
                      f'<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username={USER}&amp;theme=github_dark&amp;animation=fade" width="48%"/>\n'
                      f'<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username={USER}&amp;theme=github_dark&amp;animation=fade" width="48%"/>\n'
@@ -960,8 +962,7 @@ def write_readme():
                      f'<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username={USER}&amp;theme=github_dark&amp;animation=fade" width="96%"/>\n'
                      '</div>')
     blocks = [
-        "<!-- Generated by scripts/render-svgs.py from data/profile.json. Edit the script, not this file.\n"
-        "     Profile design adapted from Sagargupta16 (https://github.com/Sagargupta16), MIT licensed. -->",
+        "<!-- Generated by scripts/render-svgs.py from data/profile.json. Edit the script, not this file. -->",
         neofetch,
         picture("pills", "GitHub followers, stars, pull requests, Godot merges, CS50 certifications, contributions"),
         picture("about", "BCA Computer Science student building Java backends with Spring Boot, PostgreSQL and Redis; Godot Engine contributor"),
@@ -976,8 +977,7 @@ def write_readme():
         summary_cards, snake,
         D, head_picture("education"), picture("education", "Education"),
         D, picture("footer", "More at shivakar.me", site),
-        '<p align="center"><sub>Profile design adapted from <a href="https://github.com/Sagargupta16">Sagargupta16</a>. '
-        f'Stats refreshed {DATA["generated"]}.</sub></p>']
+        f'<p align="center"><sub>Stats refreshed {DATA["generated"]}.</sub></p>']
     with open(os.path.join(ROOT, "README.md"), "w", encoding="utf-8") as f:
         f.write("\n\n".join(blocks) + "\n")
 
