@@ -102,7 +102,7 @@
   {
    "name": "shiva-kar",
    "desc": "",
-   "lang": "",
+   "lang": "Python",
    "stars": 0,
    "forks": 0,
    "topics": [],
@@ -113,24 +113,28 @@
  "languages": [
   {
    "name": "C",
-   "pct": 42.9
+   "pct": 37.5
   },
   {
    "name": "TypeScript",
-   "pct": 28.6
+   "pct": 25.0
   },
   {
    "name": "Java",
-   "pct": 14.3
+   "pct": 12.5
   },
   {
    "name": "JavaScript",
-   "pct": 14.3
+   "pct": 12.5
+  },
+  {
+   "name": "Python",
+   "pct": 12.5
   }
  ],
  "languages_basis": "repos",
  "calendar": {
-  "total": 1692,
+  "total": 1697,
   "days": [
    {
     "date": "2025-11-16",
@@ -1979,7 +1983,7 @@
    },
    {
     "date": "2026-11-20",
-    "count": 1,
+    "count": 6,
     "level": 1
    }
   ],
@@ -2082,9 +2086,9 @@
   }
  ],
  "upstream_stars": {
-  "godotengine/godot": 120448,
+  "godotengine/godot": 120449,
   "wwwillgunnn/catppuccin-obsidian-colored-sidebar": 0,
-  "excalidraw/excalidraw": 135991
+  "excalidraw/excalidraw": 135996
  },
  "prs_total": 40,
  "issues_total": 22,
