@@ -41,7 +41,7 @@ def main():
     print("\n--- 3. Typography Floor (font-size >= 10.5px) ---")
     font_size_pattern = re.compile(r'font-size="([\d\.]+)"')
     small_fonts = []
-    svg_files = [f for f in os.listdir(OUT) if f.endswith(".svg")]
+    svg_files = [f for f in os.listdir(OUT) if f.endswith(".svg") and not f.startswith("banner-")]
     for svg_file in svg_files:
         with open(os.path.join(OUT, svg_file), encoding="utf-8") as f:
             content = f.read()

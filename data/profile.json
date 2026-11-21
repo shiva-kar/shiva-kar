@@ -91,46 +91,50 @@
    "updated": "2026-11-06"
   },
   {
+   "name": "shiva-kar",
+   "desc": "",
+   "lang": "Python",
+   "stars": 0,
+   "forks": 0,
+   "topics": [],
+   "updated": "2026-11-21"
+  },
+  {
    "name": "shiva-kar.github.io",
    "desc": "Personal portfolio website for Shiva Kar \u2014 BCA student, C programmer, systems engineering enthusiast.",
    "lang": "JavaScript",
    "stars": 0,
    "forks": 0,
    "topics": [],
-   "updated": "2026-11-07"
-  },
-  {
-   "name": "shiva-kar",
-   "desc": "",
-   "lang": "",
-   "stars": 0,
-   "forks": 0,
-   "topics": [],
-   "updated": "2026-11-20"
+   "updated": "2026-11-21"
   }
  ],
  "stars": 21,
  "languages": [
   {
    "name": "C",
-   "pct": 42.9
+   "pct": 37.5
   },
   {
    "name": "TypeScript",
-   "pct": 28.6
+   "pct": 25.0
   },
   {
    "name": "Java",
-   "pct": 14.3
+   "pct": 12.5
+  },
+  {
+   "name": "Python",
+   "pct": 12.5
   },
   {
    "name": "JavaScript",
-   "pct": 14.3
+   "pct": 12.5
   }
  ],
  "languages_basis": "repos",
  "calendar": {
-  "total": 1692,
+  "total": 1726,
   "days": [
    {
     "date": "2025-11-16",
@@ -1774,7 +1778,7 @@
    },
    {
     "date": "2026-10-10",
-    "count": 13,
+    "count": 12,
     "level": 1
    },
    {
@@ -1979,13 +1983,18 @@
    },
    {
     "date": "2026-11-20",
-    "count": 1,
+    "count": 6,
     "level": 1
+   },
+   {
+    "date": "2026-11-21",
+    "count": 30,
+    "level": 3
    }
   ],
-  "current_streak": 1,
+  "current_streak": 2,
   "longest_streak": 41,
-  "active_days": 304
+  "active_days": 305
  },
  "merged": [
   {
@@ -2082,11 +2091,11 @@
   }
  ],
  "upstream_stars": {
-  "godotengine/godot": 120448,
+  "godotengine/godot": 120528,
   "wwwillgunnn/catppuccin-obsidian-colored-sidebar": 0,
-  "excalidraw/excalidraw": 135991
+  "excalidraw/excalidraw": 136068
  },
- "prs_total": 40,
+ "prs_total": 44,
  "issues_total": 22,
- "generated": "2026-11-20"
+ "generated": "2026-11-21"
 }

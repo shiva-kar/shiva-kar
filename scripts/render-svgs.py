@@ -27,7 +27,6 @@ from cards import (
     projects,
     stack,
     stats,
-    tools,
 )
 
 OUT = os.path.join(ROOT, "assets", "svg")
@@ -39,70 +38,78 @@ SIZES = {"": 880, "-mobile": 400}
 def write(name, parts):
     w, h, body = parts
     with open(os.path.join(OUT, name + ".svg"), "w", encoding="utf-8") as f:
-        f.write(kit.doc(w, h, body))
+        f.write(kit.doc(w, h, body) + "\n")
     kit.clear_used()
 
 
 def picture(name, alt, link=None):
-    pic = (f'<picture><source media="(min-width: 1012px)" srcset="assets/svg/{name}.svg" />'
-           f'<img src="assets/svg/{name}-mobile.svg" width="100%" alt="{alt}" /></picture>')
+    pic = (f'<picture>'
+           f'<source media="(prefers-color-scheme: light) and (min-width: 1012px)" srcset="assets/svg/{name}-light.svg" />'
+           f'<source media="(prefers-color-scheme: dark) and (min-width: 1012px)" srcset="assets/svg/{name}-dark.svg" />'
+           f'<source media="(prefers-color-scheme: light)" srcset="assets/svg/{name}-light-mobile.svg" />'
+           f'<source media="(prefers-color-scheme: dark)" srcset="assets/svg/{name}-dark-mobile.svg" />'
+           f'<img src="assets/svg/{name}-dark-mobile.svg" width="100%" alt="{alt}" />'
+           f'</picture>')
     return f'<a href="{link}">{pic}</a>' if link else pic
 
 
 def head_picture(key):
+    val = config.HEADERS.get(key, ("", key))
+    title = val[0] if isinstance(val, (tuple, list)) else val
     return (f'<picture><source media="(prefers-color-scheme: light) and (min-width: 1012px)" srcset="assets/svg/header-{key}-light.svg" />'
             f'<source media="(prefers-color-scheme: dark) and (min-width: 1012px)" srcset="assets/svg/header-{key}-dark.svg" />'
             f'<source media="(prefers-color-scheme: light)" srcset="assets/svg/header-{key}-light-mobile.svg" />'
             f'<source media="(prefers-color-scheme: dark)" srcset="assets/svg/header-{key}-dark-mobile.svg" />'
-            f'<img src="assets/svg/header-{key}-dark-mobile.svg" width="100%" alt="{config.HEADERS[key][1]}" /></picture>')
+            f'<img src="assets/svg/header-{key}-dark-mobile.svg" width="100%" alt="{title}" /></picture>')
 
 
 def write_readme():
-    D = '<picture><img src="assets/svg/divider.svg" width="100%" alt="" /></picture>'
     site = config.LINKS["portfolio"][2]
     prs = f"https://github.com/search?q=is%3Apr+author%3A{config.USER}+is%3Amerged+-user%3A{config.USER}&amp;type=pullrequests"
     repos = f"https://github.com/{config.USER}?tab=repositories"
-    btns = "\n".join(f'<a href="{u}"><picture><img src="assets/svg/connect-{k}.svg" height="38" alt="{n.title()}" /></picture></a>'
-                     for k, (n, _, u) in config.LINKS.items())
-    raw = f"https://raw.githubusercontent.com/{config.USER}/{config.USER}/output"
-    snake = (f'<picture>\n  <source media="(prefers-color-scheme: dark)" srcset="{raw}/github-snake-dark.svg" />\n'
-             f'  <source media="(prefers-color-scheme: light)" srcset="{raw}/github-snake.svg" />\n'
-             f'  <img alt="Contribution snake" src="{raw}/github-snake.svg" width="100%" />\n</picture>')
-    # Neofetch dark/light block: verbatim from old README, must stay at same paths
+    btns = "\n".join(
+        f'<a href="{u}"><picture>'
+        f'<source media="(prefers-color-scheme: light)" srcset="assets/svg/connect-{k}-light.svg" />'
+        f'<source media="(prefers-color-scheme: dark)" srcset="assets/svg/connect-{k}-dark.svg" />'
+        f'<img src="assets/svg/connect-{k}-dark.svg" height="36" alt="{n.title()}" />'
+        f'</picture></a>'
+        for k, (n, _, u) in config.LINKS.items()
+    )
+    
+    # Neofetch dark/light banner: assets/svg/banner-*.svg ensures fresh caching on GitHub Camo
     neofetch = ('<picture>\n'
-                '  <source media="(prefers-color-scheme: dark)" srcset="dark_mode.svg" />\n'
-                '  <source media="(prefers-color-scheme: light)" srcset="light_mode.svg" />\n'
-                '  <img alt="shiva-kar\'s GitHub profile" src="dark_mode.svg" width="100%" />\n'
+                '  <source media="(prefers-color-scheme: dark)" srcset="assets/svg/banner-dark.svg" />\n'
+                '  <source media="(prefers-color-scheme: light)" srcset="assets/svg/banner-light.svg" />\n'
+                '  <img alt="shiva-kar\'s GitHub profile" src="assets/svg/banner-dark.svg" width="100%" />\n'
                 '</picture>')
-    # Old GitHub summary cards (profile-summary-cards): stats, repos-per-language and profile-details
-    summary_cards = ('<div align="center">\n'
-                     f'<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username={config.USER}&amp;theme=github_dark&amp;animation=fade" width="48%"/>\n'
-                     f'<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username={config.USER}&amp;theme=github_dark&amp;animation=fade" width="48%"/>\n'
-                     '</div>\n\n'
-                     '<div align="center">\n'
-                     f'<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username={config.USER}&amp;theme=github_dark&amp;animation=fade" width="96%"/>\n'
-                     '</div>')
+                
+    raw = f"https://raw.githubusercontent.com/{config.USER}/{config.USER}/output"
+    snake = (f'<picture>\n'
+             f'  <source media="(prefers-color-scheme: dark)" srcset="{raw}/github-snake-dark.svg" />\n'
+             f'  <source media="(prefers-color-scheme: light)" srcset="{raw}/github-snake.svg" />\n'
+             f'  <img alt="Contribution snake animation" src="{raw}/github-snake.svg" width="100%" />\n'
+             f'</picture>')
+
     blocks = [
         "<!-- Generated by scripts/render-svgs.py from data/profile.json. Edit scripts/config.py to update info. -->",
         neofetch,
-        picture("pills", "GitHub followers, stars, pull requests, Godot merges, CS50 certifications, contributions"),
-        picture("about", "BCA Computer Science student building Java backends with Spring Boot, PostgreSQL and Redis; Godot Engine contributor"),
+        picture("pills", "Academic and engineering highlights: BCA Computer Science, Godot Engine contributions, primary stack, and location"),
+        picture("about", "Undergraduate at Amity University Online building backend applications with Java, Spring Boot, PostgreSQL, and Godot Engine C++"),
         f'<p align="center">\n{btns}\n</p>',
-        D, head_picture("journey"), picture("timeline", "Education and upstream contribution timeline"),
-        D, head_picture("projects"), picture("projects", "Featured projects", repos),
-        D, head_picture("opensource"), picture("oss", "Open source upstream contributions, merged PRs and open PRs", prs),
-        D, head_picture("certs"), picture("certs", "CS50x and CS50 SQL certifications"),
-        D, head_picture("stack"), picture("marquee", "Tech stack logos"), picture("concepts", "Core concepts and libraries"),
-        D, head_picture("tools"), picture("tools", "Developer setup and daily tools"),
-        D, head_picture("currently"), picture("currently", "What I am working on right now"),
-        D, head_picture("stats"), picture("stats", "GitHub contribution stats", f"https://github.com/{config.USER}"),
-        summary_cards, snake,
-        D, head_picture("education"), picture("education", "Education"),
-        D, picture("footer", "More at shivakar.me", site),
+        head_picture("projects"), picture("projects", "Flagship engineering projects: E-Commerce Backend API, API Rate Limiter and Metering Service, and SXSHELL POSIX Shell", repos),
+        head_picture("opensource"), picture("oss", "Open source upstream contributions to Godot Engine in C++", prs),
+        head_picture("certs"), picture("certs", "CS50x and CS50 SQL certifications"),
+        head_picture("stack"), picture("marquee", "Technologies and development tools"),
+        head_picture("currently"), picture("currently", "Current engineering focus and work"),
+        head_picture("stats"), picture("stats", "GitHub contribution activity and language breakdown", f"https://github.com/{config.USER}"),
+        snake,
+        head_picture("education"), picture("education", "Education and coursework"),
+        picture("footer", "More at shivakar.me", site),
         f'<p align="center"><sub>Stats refreshed {DATA.get("generated", "")}.</sub></p>'
     ]
     with open(os.path.join(ROOT, "README.md"), "w", encoding="utf-8") as f:
         f.write("\n\n".join(blocks) + "\n")
+
 
 
 def main():
@@ -111,33 +118,46 @@ def main():
         if f.endswith(".svg"):
             os.remove(os.path.join(OUT, f))
 
-    for suf, w in SIZES.items():
-        # Render cards using the modular card generators
-        write("hero" + suf, hero.hero(w, DATA))
-        write("pills" + suf, hero.pills(w, DATA))
-        write("about" + suf, about.about(w))
-        write("timeline" + suf, career.timeline(w, DATA))
-        write("projects" + suf, projects.projects(w, DATA))
-        write("oss" + suf, oss.oss(w, DATA))
-        write("oss-repos" + suf, oss.oss_repos(w, DATA))
-        write("oss-merged" + suf, oss.oss_merged(w, DATA))
-        write("oss-open" + suf, oss.oss_open(w, DATA))
-        write("certs" + suf, certs.certs(w))
-        write("marquee" + suf, stack.marquee(w))
-        write("concepts" + suf, stack.concepts(w))
-        write("tools" + suf, tools.tools(w))
-        write("currently" + suf, currently.currently(w))
-        write("stats" + suf, stats.stats(w, DATA))
-        write("education" + suf, career.education(w))
-        write("footer" + suf, chrome.footer(w))
+    for theme in ("dark", "light"):
+        kit.set_theme(theme)
+        for suf, w in SIZES.items():
+            write(f"pills-{theme}{suf}", hero.pills(w, DATA))
+            write(f"about-{theme}{suf}", about.about(w))
+            write(f"projects-{theme}{suf}", projects.projects(w, DATA))
+            write(f"oss-{theme}{suf}", oss.oss(w, DATA))
+            write(f"certs-{theme}{suf}", certs.certs(w))
+            write(f"marquee-{theme}{suf}", stack.marquee(w))
+            write(f"currently-{theme}{suf}", currently.currently(w))
+            write(f"stats-{theme}{suf}", stats.stats(w, DATA))
+            write(f"education-{theme}{suf}", career.education(w))
+            write(f"footer-{theme}{suf}", chrome.footer(w))
 
-        for key in config.HEADERS:
-            for theme in ("light", "dark"):
+            for key in config.HEADERS:
                 write(f"header-{key}-{theme}{suf}", chrome.header(key, theme, w))
 
-    write("divider", chrome.divider(880))
+        for k, (text, slug, _) in config.LINKS.items():
+            write(f"connect-{k}-{theme}", chrome.connect(text, slug, theme))
+
+    # Backward compatibility: write un-themed versions (using dark theme defaults)
+    kit.set_theme("dark")
+    for suf, w in SIZES.items():
+        write(f"pills{suf}", hero.pills(w, DATA))
+        write(f"about{suf}", about.about(w))
+        write(f"projects{suf}", projects.projects(w, DATA))
+        write(f"oss{suf}", oss.oss(w, DATA))
+        write(f"certs{suf}", certs.certs(w))
+        write(f"marquee{suf}", stack.marquee(w))
+        write(f"currently{suf}", currently.currently(w))
+        write(f"stats{suf}", stats.stats(w, DATA))
+        write(f"education{suf}", career.education(w))
+        write(f"footer{suf}", chrome.footer(w))
+
     for k, (text, slug, _) in config.LINKS.items():
-        write(f"connect-{k}", chrome.connect(text, slug))
+        write(f"connect-{k}", chrome.connect(text, slug, "dark"))
+
+    import shutil
+    shutil.copyfile(os.path.join(ROOT, "dark_mode.svg"), os.path.join(OUT, "banner-dark.svg"))
+    shutil.copyfile(os.path.join(ROOT, "light_mode.svg"), os.path.join(OUT, "banner-light.svg"))
 
     write_readme()
     print("wrote", len(os.listdir(OUT)), "SVGs and README.md")

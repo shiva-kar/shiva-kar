@@ -54,18 +54,22 @@ jobs:
 
               Path(name).write_text(content, encoding="utf-8")
               tmp_path.unlink()
+
+          import shutil
+          shutil.copyfile("dark_mode.svg", "assets/svg/banner-dark.svg")
+          shutil.copyfile("light_mode.svg", "assets/svg/banner-light.svg")
           EOF
 
       - name: Commit or amend and push if stats changed
         run: |
-          if git diff --quiet dark_mode.svg light_mode.svg; then
+          if git diff --quiet dark_mode.svg light_mode.svg assets/svg/banner-dark.svg assets/svg/banner-light.svg; then
             echo "No changes in profile stats or info."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dark_mode.svg light_mode.svg
+          git add dark_mode.svg light_mode.svg assets/svg/banner-dark.svg assets/svg/banner-light.svg
 
           COMMIT_MSG="chore: update gh-ascii profile card stats [skip ci]"
           LAST_MSG="$(git log -1 --pretty=%s)"

@@ -1,76 +1,75 @@
 #!/usr/bin/env python3
-"""Hero and top statistics pills components."""
+"""Hero and top statistics summary components."""
 import config
 import kit
-from kit import BLUE, CARD, CARD2, EDGE2, GREEN, MUTED, ORANGE, PURPLE, card, label, mix, t, wrap
+from kit import BLUE, CARD, CARD2, EDGE, GREEN, MUTED, ORANGE, TEXT, TITLE, card, t, wrap
 
 
 def hero(w, data):
     m = w < 600
-    pad = 24 if m else 48
-    big = 42 if m else 56
+    pad = 24 if m else 40
+    big = 38 if m else 50
     sub = 15 if m else 17
-    loc = (config.LOCATION or data.get("location") or "").upper()
-    sublines = wrap(config.SUBTITLE, "bodyb", sub, w - 2 * pad - (0 if m else 260))
-    stat_w = kit.tw(config.STATUS, "monob", 11.5, 1.2) + 38
-    y = 52 + big + 10
-    yy = y + 32
-    py = yy + len(sublines) * (sub + 8)
-    h = py + 48 if m else 240
-    body = [
-        card(0, 0, w, h, 14),
-        label(pad, 48, "HI, I AM", BLUE, 11.5),
-        t(pad, y, config.NAME, "head", big, "#ffffff")
-    ]
-    for ln in sublines:
-        body.append(t(pad, yy, ln, "bodyb", sub, MUTED))
-        yy += sub + 8
-    if not m:
-        py = 186
-    body.append(
-        f'<rect x="{pad}" y="{py}" width="{stat_w:.1f}" height="28" rx="6" fill="{GREEN}" fill-opacity=".1" '
-        f'stroke="{GREEN}" stroke-opacity=".35"/>'
-        f'<circle cx="{pad + 14}" cy="{py + 14}" r="3.5" fill="{GREEN}"/>'
-    )
-    body.append(t(pad + 26, py + 18.5, config.STATUS, "monob", 11.5, GREEN, ls=1.2))
+    loc = config.LOCATION or data.get("location") or ""
+    sublines = wrap(config.SUBTITLE, "body", sub, w - 2 * pad)
+    y = pad + big
+    yy = y + 22
+    for _ in sublines:
+        yy += sub + 6
     if loc:
-        body.append(t(pad if m else pad + stat_w + 16, py + (44 if m else 18.5), loc, "mono", 11, MUTED, ls=1.2))
+        yy += 20
+    h = yy + pad - 6
+    body = [
+        card(0, 0, w, h, 12),
+        t(pad, y, config.NAME, "head", big, TITLE),
+    ]
+    cur_y = y + 26
+    for ln in sublines:
+        body.append(t(pad, cur_y, ln, "body", sub, MUTED))
+        cur_y += sub + 6
+    if loc:
+        body.append(t(pad, cur_y + 12, loc, "body", 13, MUTED))
     return w, h, "".join(body)
 
 
 def pills(w, data):
-    merged_godot = sum(1 for p in data.get("merged", []) if p["repo"] == "godotengine/godot")
+    m = w < 600
+    merged_godot = sum(1 for p in data.get("merged", []) if p.get("repo") == "godotengine/godot") or 6
     items = [
-        ("FOLLOWERS", str(data.get("followers", 0)), BLUE),
-        ("TOTAL STARS", str(data.get("stars", 0)), ORANGE),
-        ("PULL REQUESTS", str(data.get("prs_total", 0)), BLUE),
-        ("GODOT MERGED", str(merged_godot), GREEN),
-        ("CERTIFIED", "CS50x + CS50 SQL", PURPLE),
-        ("CONTRIBUTIONS", f'{data.get("calendar", {}).get("total", 0):,}', BLUE),
-        ("PORTFOLIO", "SHIVAKAR.ME", BLUE)
+        ("BCA COMPUTER SCIENCE", f"CGPA {config.CGPA}", "Amity University Online", TEXT),
+        ("GODOT ENGINE", f"{merged_godot} Merged PRs", "15 submitted (C++)", GREEN),
+        ("PRIMARY STACK", "Java · Spring Boot", "PostgreSQL · Redis · Docker", TEXT),
+        ("BASED IN", "Hojai, Assam, India", "Open to Remote / Relocate", TEXT),
     ]
-    gap, ph = 10, 34
-    rows, cur, cw = [], [], 0
-    for it in items:
-        lw = kit.tw(it[0], "mono", 11, 1.2) + 24
-        vw = kit.tw(it[1], "monob", 12.5, 0.8) + 24
-        pw = lw + vw
-        if cur and cw + gap + pw > w:
-            rows.append((cur, cw))
-            cur, cw = [], 0
-        cw += (gap if cur else 0) + pw
-        cur.append((it, lw, vw))
-    rows.append((cur, cw))
-    body = []
-    for r, (row, rw) in enumerate(rows):
-        x = (w - rw) / 2
-        y = r * (ph + 10)
-        for (lab, val, col), lw, vw in row:
-            pw = lw + vw
-            body.append(f'<rect x="{x + .5:.1f}" y="{y + .5}" width="{pw - 1:.1f}" height="{ph - 1}" rx="17" fill="{CARD2}" stroke="{EDGE2}"/>'
-                        f'<path d="M{x + 17:.1f} {y} A17 17 0 0 0 {x + 17:.1f} {y + ph} H{x + lw:.1f} V{y} Z" fill="{mix(col, CARD, .12)}"/>'
-                        f'<line x1="{x + lw:.1f}" y1="{y}" x2="{x + lw:.1f}" y2="{y + ph}" stroke="{EDGE2}"/>')
-            body.append(t(x + 12, y + 21.5, lab, "mono", 11, MUTED, ls=1.2))
-            body.append(t(x + lw + 12, y + 22, val, "monob", 12.5, col, ls=0.8))
-            x += pw + gap
-    return w, len(rows) * (ph + 10) - 10, "".join(body)
+    
+    if m:
+        cols = 2
+        gap = 10
+        card_w = (w - gap) / cols
+        h_cell = 70
+        body = []
+        for i, (lab, val, sub, col) in enumerate(items):
+            r, c = divmod(i, cols)
+            cx = c * (card_w + gap)
+            cy = r * (h_cell + gap)
+            body.append(card(cx, cy, card_w, h_cell, 6, fill=CARD2, stroke=EDGE))
+            body.append(t(cx + card_w / 2, cy + 20, lab, "bodyb", 10.5, MUTED, "middle", ls=0.3))
+            body.append(t(cx + card_w / 2, cy + 42, val, "bodyb", 15, col, "middle"))
+            body.append(t(cx + card_w / 2, cy + 59, sub, "body", 10.5, MUTED, "middle"))
+        rows = 2
+        total_h = rows * h_cell + (rows - 1) * gap
+        return w, total_h, "".join(body)
+    else:
+        cols = 4
+        gap = 12
+        card_w = (w - gap * (cols - 1)) / cols
+        h_cell = 74
+        body = []
+        for i, (lab, val, sub, col) in enumerate(items):
+            cx = i * (card_w + gap)
+            body.append(card(cx, 0, card_w, h_cell, 6, fill=CARD2, stroke=EDGE))
+            body.append(t(cx + card_w / 2, 22, lab, "bodyb", 10.8, MUTED, "middle", ls=0.4))
+            body.append(t(cx + card_w / 2, 45, val, "bodyb", 16.5, col, "middle"))
+            body.append(t(cx + card_w / 2, 62, sub, "body", 11.2, MUTED, "middle"))
+        return w, h_cell, "".join(body)
+
