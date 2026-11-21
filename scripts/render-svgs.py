@@ -43,8 +43,13 @@ def write(name, parts):
 
 
 def picture(name, alt, link=None):
-    pic = (f'<picture><source media="(min-width: 1012px)" srcset="assets/svg/{name}.svg" />'
-           f'<img src="assets/svg/{name}-mobile.svg" width="100%" alt="{alt}" /></picture>')
+    pic = (f'<picture>'
+           f'<source media="(prefers-color-scheme: light) and (min-width: 1012px)" srcset="assets/svg/{name}-light.svg" />'
+           f'<source media="(prefers-color-scheme: dark) and (min-width: 1012px)" srcset="assets/svg/{name}-dark.svg" />'
+           f'<source media="(prefers-color-scheme: light)" srcset="assets/svg/{name}-light-mobile.svg" />'
+           f'<source media="(prefers-color-scheme: dark)" srcset="assets/svg/{name}-dark-mobile.svg" />'
+           f'<img src="assets/svg/{name}-dark-mobile.svg" width="100%" alt="{alt}" />'
+           f'</picture>')
     return f'<a href="{link}">{pic}</a>' if link else pic
 
 
@@ -113,27 +118,42 @@ def main():
         if f.endswith(".svg"):
             os.remove(os.path.join(OUT, f))
 
-    for suf, w in SIZES.items():
-        # Render cards using the modular card generators
-        write("pills" + suf, hero.pills(w, DATA))
-        write("about" + suf, about.about(w))
-        write("projects" + suf, projects.projects(w, DATA))
-        write("oss" + suf, oss.oss(w, DATA))
-        write("certs" + suf, certs.certs(w))
-        write("marquee" + suf, stack.marquee(w))
-        write("currently" + suf, currently.currently(w))
-        write("stats" + suf, stats.stats(w, DATA))
-        write("education" + suf, career.education(w))
-        write("footer" + suf, chrome.footer(w))
+    for theme in ("dark", "light"):
+        kit.set_theme(theme)
+        for suf, w in SIZES.items():
+            write(f"pills-{theme}{suf}", hero.pills(w, DATA))
+            write(f"about-{theme}{suf}", about.about(w))
+            write(f"projects-{theme}{suf}", projects.projects(w, DATA))
+            write(f"oss-{theme}{suf}", oss.oss(w, DATA))
+            write(f"certs-{theme}{suf}", certs.certs(w))
+            write(f"marquee-{theme}{suf}", stack.marquee(w))
+            write(f"currently-{theme}{suf}", currently.currently(w))
+            write(f"stats-{theme}{suf}", stats.stats(w, DATA))
+            write(f"education-{theme}{suf}", career.education(w))
+            write(f"footer-{theme}{suf}", chrome.footer(w))
 
-        for key in config.HEADERS:
-            for theme in ("light", "dark"):
+            for key in config.HEADERS:
                 write(f"header-{key}-{theme}{suf}", chrome.header(key, theme, w))
+
+        for k, (text, slug, _) in config.LINKS.items():
+            write(f"connect-{k}-{theme}", chrome.connect(text, slug, theme))
+
+    # Backward compatibility: write un-themed versions (using dark theme defaults)
+    kit.set_theme("dark")
+    for suf, w in SIZES.items():
+        write(f"pills{suf}", hero.pills(w, DATA))
+        write(f"about{suf}", about.about(w))
+        write(f"projects{suf}", projects.projects(w, DATA))
+        write(f"oss{suf}", oss.oss(w, DATA))
+        write(f"certs{suf}", certs.certs(w))
+        write(f"marquee{suf}", stack.marquee(w))
+        write(f"currently{suf}", currently.currently(w))
+        write(f"stats{suf}", stats.stats(w, DATA))
+        write(f"education{suf}", career.education(w))
+        write(f"footer{suf}", chrome.footer(w))
 
     for k, (text, slug, _) in config.LINKS.items():
         write(f"connect-{k}", chrome.connect(text, slug, "dark"))
-        write(f"connect-{k}-dark", chrome.connect(text, slug, "dark"))
-        write(f"connect-{k}-light", chrome.connect(text, slug, "light"))
 
     write_readme()
     print("wrote", len(os.listdir(OUT)), "SVGs and README.md")

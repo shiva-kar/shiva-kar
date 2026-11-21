@@ -2,7 +2,7 @@
 """Hero and top statistics summary components."""
 import config
 import kit
-from kit import BLUE, CARD, CARD2, EDGE, GREEN, MUTED, ORANGE, TEXT, card, t, wrap
+from kit import BLUE, CARD, CARD2, EDGE, GREEN, MUTED, ORANGE, TEXT, TITLE, card, t, wrap
 
 
 def hero(w, data):
@@ -21,7 +21,7 @@ def hero(w, data):
     h = yy + pad - 6
     body = [
         card(0, 0, w, h, 12),
-        t(pad, y, config.NAME, "head", big, "#ffffff"),
+        t(pad, y, config.NAME, "head", big, TITLE),
     ]
     cur_y = y + 26
     for ln in sublines:

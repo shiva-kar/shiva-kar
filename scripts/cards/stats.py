@@ -4,7 +4,7 @@ from datetime import date
 
 import config
 import kit
-from kit import BODY, CARD, CARD2, EDGE, GREEN, MUTED, ORANGE, TEXT, card, t
+from kit import BODY, CARD, CARD2, EDGE, GREEN, HEATMAP, MUTED, ORANGE, TEXT, TITLE, card, t
 
 LANG_COL = {
     "TypeScript": "#3178c6",
@@ -41,7 +41,7 @@ def stats(w, data):
         r, c = divmod(i, m_cols)
         cx = pad + c * (m_w + 12)
         cy = my + r * 52
-        body.append(t(cx, cy, val, "bodyb", 19 if not m else 17, "#ffffff"))
+        body.append(t(cx, cy, val, "bodyb", 19 if not m else 17, TITLE))
         body.append(t(cx, cy + 19, lab, "body", 12, MUTED))
     
     y = my + ((len(metrics) + m_cols - 1) // m_cols) * 52 + 8
@@ -60,7 +60,7 @@ def stats(w, data):
     weeks = weeks[-nweeks:]
     
     pitch = (w - 2 * pad) / nweeks
-    lv = ["#161917", "#1d3d25", "#286036", "#3c9152", "#4fa87d"]
+    lv = HEATMAP
     for wi, wk in enumerate(weeks):
         for di, d in enumerate(wk):
             if d:

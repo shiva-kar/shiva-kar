@@ -2,7 +2,7 @@
 """Featured projects component: in-depth engineering case studies with clear technical breakdowns."""
 import config
 import kit
-from kit import BODY, CARD, CARD2, EDGE, GREEN, MUTED, TEXT, card, fit, t, wrap
+from kit import BODY, CARD, CARD2, EDGE, GREEN, MUTED, TEXT, TITLE, card, fit, t, wrap
 
 
 def projects(w, data):
@@ -22,7 +22,7 @@ def projects(w, data):
             g = [card(0, cy, cw, ch, r=6, fill=CARD, stroke=EDGE)]
 
             # Title
-            g.append(t(pad_x, cy + pad_y + 13, p["title"], "head", 16, "#ffffff"))
+            g.append(t(pad_x, cy + pad_y + 13, p["title"], "head", 16, TITLE))
 
             # Category pill on right
             cat = p["category"]
@@ -67,7 +67,7 @@ def projects(w, data):
 
             y = card_start_y + pad_y + 13
             # Title
-            g.append(t(pad_x, y, p["title"], "head", 15, "#ffffff"))
+            g.append(t(pad_x, y, p["title"], "head", 15, TITLE))
             y += 20
 
             # Category pill

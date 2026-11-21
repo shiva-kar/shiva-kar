@@ -34,7 +34,7 @@ def marquee(w):
             ix = cx + pad + ic * iw
             iy = cy + pad + 38 + ir * 30
             
-            c_color = col or ("#" + ICONS[slug]["hex"] if slug in ICONS else "#ffffff")
+            c_color = col or ("#" + ICONS[slug]["hex"] if slug in ICONS else TEXT)
             if slug and slug in ICONS:
                 cb.append(icon(slug, ix, iy - 14, 18, c_color))
                 cb.append(t(ix + 26, iy, name, "body", 12.5, BODY))

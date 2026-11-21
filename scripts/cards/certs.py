@@ -2,7 +2,7 @@
 """Verified certifications component: clean side-by-side credential cards matching portfolio cert boxes."""
 import config
 import kit
-from kit import BODY, CARD, CARD2, EDGE, GREEN, MUTED, TEXT, card, fit, t, wrap
+from kit import BODY, CARD, CARD2, EDGE, GREEN, MUTED, TEXT, TITLE, card, fit, t, wrap
 
 
 def certs(w):
@@ -25,7 +25,7 @@ def certs(w):
         c = [
             card(x, y, cw, ch, 6, fill=CARD, stroke=EDGE),
             t(x + pad, y + pad + 13, f"{issuer} (CS50)", "body", 12, MUTED),
-            t(x + pad, y + pad + 36, code, "head", 18, "#ffffff"),
+            t(x + pad, y + pad + 36, code, "head", 18, TITLE),
             f'<rect x="{status_x:.1f}" y="{y + pad + 22}" width="{status_w:.1f}" height="20" rx="4" fill="{CARD2}" stroke="{EDGE}"/>',
             t(status_x + status_w / 2, y + pad + 36, status_text, "bodyb", 11, GREEN, "middle"),
             t(x + pad, y + pad + 58, fit(title, "bodyb", 13.5, cw - 2 * pad), "bodyb", 13.5, TEXT),
