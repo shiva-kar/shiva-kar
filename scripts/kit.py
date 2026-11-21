@@ -67,7 +67,7 @@ def face_css(k, chars):
     if key not in _subs:
         opts = ftsubset.Options()
         opts.layout_features = ["kern"]
-        font = TTFont(os.path.join(FD, FONTS[k][2]))
+        font = TTFont(os.path.join(FD, FONTS[k][2]), recalcTimestamp=False)
         sub = ftsubset.Subsetter(opts)
         sub.populate(text="".join(sorted(chars)) + " ")
         sub.subset(font)
@@ -117,7 +117,7 @@ def wrap(s, k, size, maxw, ls=0.0, maxlines=None):
 
 
 def doc(w, h, body):
-    css = "".join(face_css(k, c) for k, c in USED.items())
+    css = "".join(face_css(k, c) for k, c in sorted(USED.items()))
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img">'
             f'<style>{css}</style>{body}</svg>')
 
@@ -127,8 +127,8 @@ def card(x, y, w, h, r=12, fill=CARD, stroke=EDGE):
             f'fill="{fill}" stroke="{stroke}"/>')
 
 
-def label(x, y, s, color=BLUE, size=11.5, anchor="start"):
-    return t(x, y, s, "monob", size, color, anchor, 2.0)
+def label(x, y, s, color=MUTED, size=11.5, anchor="start"):
+    return t(x, y, s, "bodyb", size, color, anchor, 0.5)
 
 
 def tag(x, y, text, color=BLUE, size=11.5, h=26, r=6):
