@@ -38,7 +38,7 @@ SIZES = {"": 880, "-mobile": 400}
 def write(name, parts):
     w, h, body = parts
     with open(os.path.join(OUT, name + ".svg"), "w", encoding="utf-8") as f:
-        f.write(kit.doc(w, h, body))
+        f.write(kit.doc(w, h, body) + "\n")
     kit.clear_used()
 
 
