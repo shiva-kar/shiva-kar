@@ -102,35 +102,39 @@
   {
    "name": "shiva-kar",
    "desc": "",
-   "lang": "",
+   "lang": "Python",
    "stars": 0,
    "forks": 0,
    "topics": [],
-   "updated": "2026-11-20"
+   "updated": "2026-11-21"
   }
  ],
  "stars": 21,
  "languages": [
   {
    "name": "C",
-   "pct": 42.9
+   "pct": 37.5
   },
   {
    "name": "TypeScript",
-   "pct": 28.6
+   "pct": 25.0
   },
   {
    "name": "Java",
-   "pct": 14.3
+   "pct": 12.5
   },
   {
    "name": "JavaScript",
-   "pct": 14.3
+   "pct": 12.5
+  },
+  {
+   "name": "Python",
+   "pct": 12.5
   }
  ],
  "languages_basis": "repos",
  "calendar": {
-  "total": 1692,
+  "total": 1697,
   "days": [
    {
     "date": "2025-11-16",
@@ -1774,7 +1778,7 @@
    },
    {
     "date": "2026-10-10",
-    "count": 13,
+    "count": 12,
     "level": 1
    },
    {
@@ -1979,8 +1983,13 @@
    },
    {
     "date": "2026-11-20",
-    "count": 1,
+    "count": 7,
     "level": 1
+   },
+   {
+    "date": "2026-11-21",
+    "count": 0,
+    "level": 0
    }
   ],
   "current_streak": 1,
@@ -2082,11 +2091,11 @@
   }
  ],
  "upstream_stars": {
-  "godotengine/godot": 120448,
+  "godotengine/godot": 120504,
   "wwwillgunnn/catppuccin-obsidian-colored-sidebar": 0,
-  "excalidraw/excalidraw": 135991
+  "excalidraw/excalidraw": 136043
  },
  "prs_total": 40,
  "issues_total": 22,
- "generated": "2026-11-20"
+ "generated": "2026-11-21"
 }
