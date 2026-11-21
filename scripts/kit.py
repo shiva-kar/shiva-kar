@@ -127,8 +127,8 @@ def card(x, y, w, h, r=12, fill=CARD, stroke=EDGE):
             f'fill="{fill}" stroke="{stroke}"/>')
 
 
-def label(x, y, s, color=BLUE, size=11.5, anchor="start"):
-    return t(x, y, s, "monob", size, color, anchor, 2.0)
+def label(x, y, s, color=MUTED, size=11.5, anchor="start"):
+    return t(x, y, s, "bodyb", size, color, anchor, 0.5)
 
 
 def tag(x, y, text, color=BLUE, size=11.5, h=26, r=6):

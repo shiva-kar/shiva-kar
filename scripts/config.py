@@ -9,22 +9,18 @@ will re-render all SVG cards and update README.md automatically.
 USER = "shiva-kar"
 NAME = "Shiva Kar"
 SUBTITLE = "Java backends, systems in C and Godot Engine"
-STATUS = "BUILDING BACKENDS IN JAVA"
 LOCATION = "Hojai, Assam, India"
 CGPA = "8.84/10"
 
 # Bio narrative: human, clear, zero AI em dashes
 ABOUT = (
-    "BCA Computer Science student at **Amity University Online** (CGPA 8.84/10), building **Java backends** with "
-    "**Spring Boot**, **Hibernate/JPA**, **PostgreSQL**, and **Redis**. I also work with "
-    "**React**, **TypeScript**, and **Tailwind CSS** when needed on the frontend. "
-    "In my own time, I contribute bug fixes to **Godot Engine**, focusing on editor, GUI, "
-    "GDScript, and web-platform issues in a large **C++** codebase (15 pull requests submitted, "
-    "with 7 merged). I am also interested in **systems programming** with **C** (operating systems, "
-    "process management, **POSIX** APIs, networking), as well as **graphics programming and rendering**."
+    "BCA Computer Science student at Amity University Online (CGPA 8.84/10), building Java backends with "
+    "Spring Boot, PostgreSQL, and Redis. I also work with React and TypeScript on the frontend when needed. "
+    "In my own time, I contribute bug fixes to Godot Engine across editor, GUI, GDScript, and web-platform "
+    "subsystems in C++ (15 pull requests submitted, 7 merged). I am also interested in systems programming "
+    "in C, POSIX APIs, and graphics rendering."
 )
 
-TAGS = ["Java Backend", "REST APIs", "Systems Programming", "Open Source"]
 
 LINKS = {
     "linkedin": ("LinkedIn", "linkedin", "https://www.linkedin.com/in/shiva-kar/"),
@@ -108,21 +104,14 @@ MARQUEE = [
      ("Tailwind", "tailwindcss", None), ("HTML", "html5", None)],
 ]
 
-CONCEPTS = [
-    "Spring MVC", "Spring Security", "Spring Data JPA", "REST APIs", "SQL", "Docker Compose", "Mockito",
-    "GDScript", "POSIX", "System Calls", "Processes", "Sockets", "Pipes", "Memory Management",
-    "Data Structures", "Algorithms", "OOP", "Operating Systems", "DBMS", "Computer Networks",
-    "Concurrency", "Networking", "Graphics", "Unity", "Blender"
-]
+CONCEPTS = []
 
 HEADERS = {
-    "journey": ("01 / WHERE I LEARN AND WHAT I SHIP", "Journey"),
-    "projects": ("02 / WHAT I HAVE BUILT", "Featured Projects"),
-    "opensource": ("03 / MERGED UPSTREAM WORK", "Open Source"),
-    "certs": ("04 / VERIFIED", "Certifications"),
-    "stack": ("05 / WHAT I WORK WITH DAILY", "Tech Stack and Tools"),
-    "tools": ("06 / DEVELOPER ENVIRONMENT", "Setup and Daily Tools"),
-    "currently": ("07 / WHAT I AM DOING NOW", "Currently"),
-    "stats": ("08 / GITHUB ACTIVITY", "Coding Stats"),
-    "education": ("09 / WHERE I STUDIED", "Education"),
+    "projects": ("Featured Projects",),
+    "opensource": ("Open Source",),
+    "certs": ("Certifications",),
+    "stack": ("Tech Stack",),
+    "currently": ("Currently",),
+    "stats": ("GitHub Activity",),
+    "education": ("Education",),
 }
