@@ -37,7 +37,7 @@ def pills(w, data):
     merged_godot = sum(1 for p in data.get("merged", []) if p["repo"] == "godotengine/godot")
     items = [
         ("Godot Merged", str(merged_godot), GREEN),
-        ("Pull Requests", str(data.get("prs_total", 0)), BLUE),
+        ("Pull Requests", str(data.get("prs_total", 0)), TEXT),
         ("Contributions", f'{data.get("calendar", {}).get("total", 0):,}', TEXT),
         ("Stars Earned", str(data.get("stars", 0)), ORANGE),
         ("Followers", str(data.get("followers", 0)), TEXT),
@@ -49,7 +49,7 @@ def pills(w, data):
     if m:
         cols = 2
         card_w = (w - pad * 2 - gap) / cols
-        h_cell = 54
+        h_cell = 60
         body = []
         for i, (lab, val, col) in enumerate(items):
             r, c = divmod(i, cols)
@@ -60,20 +60,20 @@ def pills(w, data):
                 cx = pad + c * (card_w + gap)
             cy = pad + r * (h_cell + gap)
             body.append(card(cx, cy, card_w, h_cell, 8, fill=CARD2, stroke=EDGE))
-            body.append(t(cx + card_w / 2, cy + 24, val, "bodyb", 16, col, "middle"))
-            body.append(t(cx + card_w / 2, cy + 42, lab, "body", 11.5, MUTED, "middle"))
+            body.append(t(cx + card_w / 2, cy + 27, val, "bodyb", 19, col, "middle"))
+            body.append(t(cx + card_w / 2, cy + 47, lab, "body", 11.5, MUTED, "middle"))
         rows = (len(items) + cols - 1) // cols
         total_h = pad * 2 + rows * (h_cell + gap) - gap
         return w, total_h, "".join(body)
     else:
         cols = len(items)
         card_w = (w - gap * (cols - 1)) / cols
-        h_cell = 58
+        h_cell = 68
         body = []
         for i, (lab, val, col) in enumerate(items):
             cx = i * (card_w + gap)
             body.append(card(cx, 0, card_w, h_cell, 8, fill=CARD2, stroke=EDGE))
-            body.append(t(cx + card_w / 2, 26, val, "bodyb", 18, col, "middle"))
-            body.append(t(cx + card_w / 2, 45, lab, "body", 12, MUTED, "middle"))
+            body.append(t(cx + card_w / 2, 30, val, "bodyb", 22, col, "middle"))
+            body.append(t(cx + card_w / 2, 52, lab, "body", 12.5, MUTED, "middle"))
         return w, h_cell, "".join(body)
 

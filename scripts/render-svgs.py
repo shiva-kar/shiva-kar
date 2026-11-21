@@ -62,7 +62,7 @@ def write_readme():
     site = config.LINKS["portfolio"][2]
     prs = f"https://github.com/search?q=is%3Apr+author%3A{config.USER}+is%3Amerged+-user%3A{config.USER}&amp;type=pullrequests"
     repos = f"https://github.com/{config.USER}?tab=repositories"
-    btns = "\n".join(f'<a href="{u}"><picture><img src="assets/svg/connect-{k}.svg" height="38" alt="{n.title()}" /></picture></a>'
+    btns = "\n".join(f'<a href="{u}"><picture><img src="assets/svg/connect-{k}.svg" height="36" alt="{n.title()}" /></picture></a>'
                      for k, (n, _, u) in config.LINKS.items())
     
     # Neofetch dark/light block: verbatim from old README, must stay at same paths

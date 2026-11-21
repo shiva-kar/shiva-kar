@@ -28,11 +28,11 @@ def oss(w, data):
             
             num_w = kit.tw(num, "mono", 12)
             left_body.append(t(pad, ly, repo, "bodyb", 13.5, TEXT))
-            left_body.append(t(pad + col_w, ly, num, "mono", 12, MUTED, "end"))
+            left_body.append(t(pad + col_w, ly, num, "mono", 12, GREEN, "end"))
             ly += 18
-            for ln in wrap(title, "body", 12.5, col_w, maxlines=2):
-                left_body.append(t(pad, ly, ln, "body", 12.5, MUTED))
-                ly += 16
+            for ln in wrap(title, "body", 13, col_w, maxlines=2):
+                left_body.append(t(pad, ly, ln, "body", 13, kit.BODY))
+                ly += 17
             ly += 10
             if i < len(merged_prs) - 1:
                 left_body.append(f'<line x1="{pad}" x2="{pad + col_w}" y1="{ly - 5}" y2="{ly - 5}" stroke="{EDGE}"/>')
@@ -49,18 +49,18 @@ def oss(w, data):
             title = p["title"]
             
             right_body.append(t(right_x, ry, repo, "bodyb", 13.5, TEXT))
-            right_body.append(t(w - pad, ry, num, "mono", 12, MUTED, "end"))
+            right_body.append(t(w - pad, ry, num, "mono", 12, ORANGE, "end"))
             ry += 18
-            for ln in wrap(title, "body", 12.5, col_w, maxlines=2):
-                right_body.append(t(right_x, ry, ln, "body", 12.5, MUTED))
-                ry += 16
+            for ln in wrap(title, "body", 13, col_w, maxlines=2):
+                right_body.append(t(right_x, ry, ln, "body", 13, kit.BODY))
+                ry += 17
             ry += 10
             if i < len(open_prs) - 1:
                 right_body.append(f'<line x1="{right_x}" x2="{w - pad}" y1="{ry - 5}" y2="{ry - 5}" stroke="{EDGE}"/>')
         
         total_h = max(ly, ry) + pad
         vsep = f'<line x1="{pad + col_w + col_gap / 2:.1f}" y1="{pad}" x2="{pad + col_w + col_gap / 2:.1f}" y2="{total_h - pad}" stroke="{EDGE}" stroke-width="1"/>'
-        return w, total_h, card(0, 0, w, total_h, 12, fill=CARD, stroke=EDGE) + vsep + "".join(left_body) + "".join(right_body)
+        return w, total_h, card(0, 0, w, total_h, 8, fill=CARD, stroke=EDGE) + vsep + "".join(left_body) + "".join(right_body)
     else:
         body = []
         cy = pad + 16
@@ -72,10 +72,10 @@ def oss(w, data):
             title = p["title"]
             
             body.append(t(pad, cy, repo, "bodyb", 13, TEXT))
-            body.append(t(w - pad, cy, num, "mono", 11.5, MUTED, "end"))
+            body.append(t(w - pad, cy, num, "mono", 11.5, GREEN, "end"))
             cy += 18
-            for ln in wrap(title, "body", 12, w - 2 * pad, maxlines=2):
-                body.append(t(pad, cy, ln, "body", 12, MUTED))
+            for ln in wrap(title, "body", 12.5, w - 2 * pad, maxlines=2):
+                body.append(t(pad, cy, ln, "body", 12.5, kit.BODY))
                 cy += 16
             cy += 8
             if i < len(merged_prs) - 1:
@@ -90,10 +90,10 @@ def oss(w, data):
             title = p["title"]
             
             body.append(t(pad, cy, repo, "bodyb", 13, TEXT))
-            body.append(t(w - pad, cy, num, "mono", 11.5, MUTED, "end"))
+            body.append(t(w - pad, cy, num, "mono", 11.5, ORANGE, "end"))
             cy += 18
-            for ln in wrap(title, "body", 12, w - 2 * pad, maxlines=2):
-                body.append(t(pad, cy, ln, "body", 12, MUTED))
+            for ln in wrap(title, "body", 12.5, w - 2 * pad, maxlines=2):
+                body.append(t(pad, cy, ln, "body", 12.5, kit.BODY))
                 cy += 16
             cy += 8
             if i < len(open_prs) - 1:

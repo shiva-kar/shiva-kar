@@ -11,11 +11,11 @@
 <picture><source media="(min-width: 1012px)" srcset="assets/svg/about.svg" /><img src="assets/svg/about-mobile.svg" width="100%" alt="BCA Computer Science student building Java backends with Spring Boot and PostgreSQL; Godot Engine C++ contributor" /></picture>
 
 <p align="center">
-<a href="https://www.linkedin.com/in/shiva-kar/"><picture><img src="assets/svg/connect-linkedin.svg" height="38" alt="Linkedin" /></picture></a>
-<a href="mailto:sksmarttech48@gmail.com"><picture><img src="assets/svg/connect-email.svg" height="38" alt="Email" /></picture></a>
-<a href="https://shivakar.me"><picture><img src="assets/svg/connect-portfolio.svg" height="38" alt="Portfolio" /></picture></a>
-<a href="https://github.com/shiva-kar"><picture><img src="assets/svg/connect-github.svg" height="38" alt="Github" /></picture></a>
-<a href="https://x.com/sk_shivakar"><picture><img src="assets/svg/connect-x.svg" height="38" alt="X" /></picture></a>
+<a href="https://www.linkedin.com/in/shiva-kar/"><picture><img src="assets/svg/connect-linkedin.svg" height="36" alt="Linkedin" /></picture></a>
+<a href="mailto:sksmarttech48@gmail.com"><picture><img src="assets/svg/connect-email.svg" height="36" alt="Email" /></picture></a>
+<a href="https://shivakar.me"><picture><img src="assets/svg/connect-portfolio.svg" height="36" alt="Portfolio" /></picture></a>
+<a href="https://github.com/shiva-kar"><picture><img src="assets/svg/connect-github.svg" height="36" alt="Github" /></picture></a>
+<a href="https://x.com/sk_shivakar"><picture><img src="assets/svg/connect-x.svg" height="36" alt="X" /></picture></a>
 </p>
 
 <picture><source media="(prefers-color-scheme: light) and (min-width: 1012px)" srcset="assets/svg/header-projects-light.svg" /><source media="(prefers-color-scheme: dark) and (min-width: 1012px)" srcset="assets/svg/header-projects-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/svg/header-projects-light-mobile.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/svg/header-projects-dark-mobile.svg" /><img src="assets/svg/header-projects-dark-mobile.svg" width="100%" alt="Featured Projects" /></picture>

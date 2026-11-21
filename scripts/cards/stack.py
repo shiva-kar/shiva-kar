@@ -42,11 +42,10 @@ CATEGORIES = [
 def marquee(w):
     """Static, non-animated grid of technical skills."""
     m = w < 600
-    pad = 18 if m else 24
-    gap = 14
+    pad = 16 if m else 20
+    gap = 12
     cols = 1 if m else 2
     cw = w if m else (w - gap) / 2
-    row_h = 24
     
     body = []
     card_y = 0
@@ -55,12 +54,12 @@ def marquee(w):
     for idx, (cat_name, items) in enumerate(CATEGORIES):
         r, c = divmod(idx, cols)
         cx = 0 if m else c * (cw + gap)
-        cy = r * (180 + gap)
-        ch = 175
+        ch = 142
+        cy = r * (ch + gap)
         
         cb = [
-            card(cx, cy, cw, ch, 10, fill=CARD, stroke=EDGE),
-            t(cx + pad, cy + pad + 14, cat_name, "bodyb", 14.5, TEXT),
+            card(cx, cy, cw, ch, 8, fill=CARD, stroke=EDGE),
+            t(cx + pad, cy + pad + 12, cat_name, "bodyb", 14.5, TEXT),
         ]
         
         # 2 columns of items inside each category
@@ -69,7 +68,7 @@ def marquee(w):
         for i, (name, slug, col) in enumerate(items):
             ir, ic = divmod(i, icols)
             ix = cx + pad + ic * iw
-            iy = cy + pad + 40 + ir * 36
+            iy = cy + pad + 38 + ir * 30
             
             c_color = col or ("#" + ICONS[slug]["hex"] if slug in ICONS else "#ffffff")
             if slug and slug in ICONS:

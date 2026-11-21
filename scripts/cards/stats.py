@@ -36,19 +36,19 @@ def stats(w, data):
     
     m_cols = 2 if m else 4
     m_w = (w - 2 * pad - (m_cols - 1) * 12) / m_cols
-    my = pad + 14
+    my = pad + 16
     for i, (lab, val) in enumerate(metrics):
         r, c = divmod(i, m_cols)
         cx = pad + c * (m_w + 12)
-        cy = my + r * 50
-        body.append(t(cx, cy, val, "bodyb", 17, "#ffffff"))
-        body.append(t(cx, cy + 18, lab, "body", 12, MUTED))
+        cy = my + r * 52
+        body.append(t(cx, cy, val, "bodyb", 19 if not m else 17, "#ffffff"))
+        body.append(t(cx, cy + 19, lab, "body", 12, MUTED))
     
-    y = my + ((len(metrics) + m_cols - 1) // m_cols) * 50 + 10
+    y = my + ((len(metrics) + m_cols - 1) // m_cols) * 52 + 8
     body.append(f'<line x1="{pad}" x2="{w - pad}" y1="{y}" y2="{y}" stroke="{EDGE}"/>')
-    y += 20
+    y += 18
     
-    # 2. Contribution Heatmap
+    # 2. Contribution Heatmap (forest green ramp matching portfolio theme)
     weeks, col = [], None
     for d in cal.get("days", []):
         wd = (date.fromisoformat(d["date"]).weekday() + 1) % 7
@@ -60,13 +60,13 @@ def stats(w, data):
     weeks = weeks[-nweeks:]
     
     pitch = (w - 2 * pad) / nweeks
-    lv = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
+    lv = ["#191e19", "#1d3d25", "#286036", "#3c9152", "#58a983"]
     for wi, wk in enumerate(weeks):
         for di, d in enumerate(wk):
             if d:
                 body.append(f'<rect x="{pad + wi * pitch:.1f}" y="{y + di * pitch:.1f}" width="{pitch - 2.5:.1f}" '
                             f'height="{pitch - 2.5:.1f}" rx="2" fill="{lv[d["level"]]}"/>')
-    y += 7 * pitch + 24
+    y += 7 * pitch + 22
     
     # 3. Language Bar
     languages = data.get("languages", [])
@@ -97,5 +97,5 @@ def stats(w, data):
         y += ((len(languages) + lc - 1) // lc) * 22
         
     h = y + pad - 6
-    return w, h, card(0, 0, w, h, 10, fill=CARD, stroke=EDGE) + "".join(body)
+    return w, h, card(0, 0, w, h, 8, fill=CARD, stroke=EDGE) + "".join(body)
 

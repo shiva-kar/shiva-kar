@@ -40,12 +40,12 @@ CURRENTLY = [
 
 # (year label, short title, institution, dates, full degree name)
 EDU = [
-    ("2017", "Class X", "Rabindra Bidyalaya High School", "JAN 2017 TO MAR 2022",
+    ("2017", "Class X", "Rabindra Bidyalaya High School", "Jan 2017 - Mar 2022",
      "Secondary Education (Class X)"),
-    ("2022", "Class XII, PCM + CS", "Deshabandhu Bidyapeeth HS", "JUL 2022 TO MAR 2025",
+    ("2022", "Class XII, PCM + CS", "Deshabandhu Bidyapeeth HS", "Jul 2022 - Mar 2025",
      "Higher Secondary (Class XII), Science (PCM + Computer Science)"),
-    ("2025", "BCA, Computer Science", "Amity University Online", "JUL 2025 TO NOV 2028",
-     "BCA: Computer Science (CGPA: 8.84/10)"),
+    ("2025", "BCA, Computer Science", "Amity University Online", "Jul 2025 - Nov 2028 (Expected)",
+     "Bachelor of Computer Applications (BCA), Computer Science (CGPA: 8.84/10)"),
 ]
 
 COURSES = [
