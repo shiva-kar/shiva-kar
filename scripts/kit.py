@@ -18,10 +18,15 @@ OUT = os.path.join(ROOT, "assets", "svg")
 FD = os.path.join(ROOT, "scripts", "fonts")
 ICONS = json.load(open(os.path.join(ROOT, "scripts", "icons.json"), encoding="utf-8"))
 
-# Palette: GitHub-native dark tones, restrained semantic accents, zero fluorescent cyan
-CARD, CARD2, EDGE, EDGE2 = "#0d1117", "#161b22", "#21262d", "#30363d"
-BLUE, GREEN, ORANGE, PURPLE = "#58a6ff", "#3fb950", "#d29922", "#bc8cff"
-TEXT, BODY, MUTED = "#f0f6fc", "#c9d1d9", "#8b949e"
+# Palette: Matching Shiva Kar's portfolio (shivakar.me / shiva-kar.github.io)
+# Warm charcoal canvas, deep forest surface, crisp pine green accent, hairline borders
+CARD, CARD2, EDGE, EDGE2 = "#111312", "#161917", "#232825", "#2e3430"
+GREEN = "#4fa87d"    # Pine Forest Green (--accent: #4fa87d)
+ORANGE = "#e5c07b"   # Warm amber/gold (--warning / terminal dot)
+BLUE = "#4fa87d"     # Unified with pine green accent
+RED = "#eb6b6b"      # Terminal / danger red
+PURPLE = "#a594f9"
+TEXT, BODY, MUTED = "#ededed", "#d1d5db", "#9ca3af"
 
 FONTS = {
     "body": ("Inter", 400, "inter-latin-400-normal.woff2"),
@@ -31,9 +36,9 @@ FONTS = {
     "head": ("Archivo Black", 400, "archivo-black-latin-400-normal.woff2"),
 }
 STACKS = {
-    "Inter": "Inter, 'Segoe UI', system-ui, sans-serif",
-    "JetBrains Mono": "'JetBrains Mono', ui-monospace, Consolas, monospace",
-    "Archivo Black": "'Archivo Black', Impact, 'Arial Black', sans-serif",
+    "Inter": "Inter, 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+    "JetBrains Mono": "'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace",
+    "Archivo Black": "'Archivo Black', 'Plus Jakarta Sans', Impact, sans-serif",
 }
 
 USED = {}
@@ -122,7 +127,7 @@ def doc(w, h, body):
             f'<style>{css}</style>{body}</svg>')
 
 
-def card(x, y, w, h, r=12, fill=CARD, stroke=EDGE):
+def card(x, y, w, h, r=6, fill=CARD, stroke=EDGE):
     return (f'<rect x="{x + .5:.1f}" y="{y + .5:.1f}" width="{w - 1:.1f}" height="{h - 1:.1f}" rx="{r}" '
             f'fill="{fill}" stroke="{stroke}"/>')
 

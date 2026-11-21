@@ -14,30 +14,30 @@ def header(key, theme, w):
     val = config.HEADERS.get(key, ("", key))
     title = val[0] if isinstance(val, (tuple, list)) else val
     dark = theme == "dark"
-    col = "#f0f6fc" if dark else "#1f2328"
-    border_col = EDGE if dark else "#d0d7de"
-    h = 44
+    col = "#ededed" if dark else "#111827"
+    border_col = EDGE if dark else "#e5e7eb"
+    h = 38
     body = [
-        t(0, 26, title, "head", 18 if m else 21, col),
-        f'<line x1="0" y1="41.5" x2="{w}" y2="41.5" stroke="{border_col}" stroke-width="1"/>'
+        t(0, 24, title, "head", 17 if m else 19, col),
+        f'<line x1="0" y1="35.5" x2="{w}" y2="35.5" stroke="{border_col}" stroke-width="1"/>'
     ]
     return w, h, "".join(body)
 
 
 def connect(text, slug):
-    wd = 14 + 16 + 10 + kit.tw(text, "bodyb", 12.5, 0.4) + 20
-    body = (f'<rect x=".5" y=".5" width="{wd - 1:.1f}" height="37" rx="18.5" fill="{CARD2}" stroke="{EDGE}"/>'
-            + icon(slug, 15, 11, 16, kit.TEXT) + t(41, 24, text, "bodyb", 12.5, kit.TEXT, ls=0.4))
-    return wd, 38, body
+    wd = 14 + 16 + 8 + kit.tw(text, "bodyb", 12.5, 0.2) + 16
+    body = (f'<rect x=".5" y=".5" width="{wd - 1:.1f}" height="35" rx="6" fill="{CARD2}" stroke="{EDGE}"/>'
+            + icon(slug, 13, 10, 16, kit.TEXT) + t(36, 22.5, text, "bodyb", 12.5, kit.TEXT, ls=0.2))
+    return wd, 36, body
 
 
 def footer(w):
     m = w < 600
-    h = 84
+    h = 60
     body = [
-        card(0, 0, w, h, 10, fill=CARD2, stroke=EDGE),
-        t(w / 2, 34, "Shiva Kar", "bodyb", 15, TEXT, "middle"),
-        t(w / 2, 58, "shivakar.me ↗", "body", 13.5, BLUE, "middle"),
+        card(0, 0, w, h, 6, fill=CARD2, stroke=EDGE),
+        t(w / 2, 26, "Shiva Kar", "bodyb", 14, TEXT, "middle"),
+        t(w / 2, 46, "shivakar.me ↗", "body", 12.5, kit.GREEN, "middle"),
     ]
     return w, h, "".join(body)
 

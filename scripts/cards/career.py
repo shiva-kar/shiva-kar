@@ -42,4 +42,4 @@ def education(w):
             y += 18
             
     h = y + pad - 6
-    return w, h, card(0, 0, w, h, 10, fill=CARD, stroke=EDGE) + "".join(body)
+    return w, h, card(0, 0, w, h, 6, fill=CARD, stroke=EDGE) + "".join(body)
