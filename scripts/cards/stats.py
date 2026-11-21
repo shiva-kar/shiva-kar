@@ -60,7 +60,7 @@ def stats(w, data):
     weeks = weeks[-nweeks:]
     
     pitch = (w - 2 * pad) / nweeks
-    lv = ["#191e19", "#1d3d25", "#286036", "#3c9152", "#58a983"]
+    lv = ["#161917", "#1d3d25", "#286036", "#3c9152", "#4fa87d"]
     for wi, wk in enumerate(weeks):
         for di, d in enumerate(wk):
             if d:
@@ -97,5 +97,5 @@ def stats(w, data):
         y += ((len(languages) + lc - 1) // lc) * 22
         
     h = y + pad - 6
-    return w, h, card(0, 0, w, h, 8, fill=CARD, stroke=EDGE) + "".join(body)
+    return w, h, card(0, 0, w, h, 6, fill=CARD, stroke=EDGE) + "".join(body)
 

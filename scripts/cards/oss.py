@@ -60,7 +60,7 @@ def oss(w, data):
         
         total_h = max(ly, ry) + pad
         vsep = f'<line x1="{pad + col_w + col_gap / 2:.1f}" y1="{pad}" x2="{pad + col_w + col_gap / 2:.1f}" y2="{total_h - pad}" stroke="{EDGE}" stroke-width="1"/>'
-        return w, total_h, card(0, 0, w, total_h, 8, fill=CARD, stroke=EDGE) + vsep + "".join(left_body) + "".join(right_body)
+        return w, total_h, card(0, 0, w, total_h, 6, fill=CARD, stroke=EDGE) + vsep + "".join(left_body) + "".join(right_body)
     else:
         body = []
         cy = pad + 16
@@ -100,5 +100,5 @@ def oss(w, data):
                 body.append(f'<line x1="{pad}" x2="{w - pad}" y1="{cy - 4}" y2="{cy - 4}" stroke="{EDGE}"/>')
         
         total_h = cy + pad
-        return w, total_h, card(0, 0, w, total_h, 12, fill=CARD, stroke=EDGE) + "".join(body)
+        return w, total_h, card(0, 0, w, total_h, 6, fill=CARD, stroke=EDGE) + "".join(body)
 

@@ -14,8 +14,8 @@ def header(key, theme, w):
     val = config.HEADERS.get(key, ("", key))
     title = val[0] if isinstance(val, (tuple, list)) else val
     dark = theme == "dark"
-    col = "#eef1ec" if dark else "#20241f"
-    border_col = EDGE if dark else "#dedfd7"
+    col = "#ededed" if dark else "#111827"
+    border_col = EDGE if dark else "#e5e7eb"
     h = 38
     body = [
         t(0, 24, title, "head", 17 if m else 19, col),
@@ -35,7 +35,7 @@ def footer(w):
     m = w < 600
     h = 60
     body = [
-        card(0, 0, w, h, 8, fill=CARD2, stroke=EDGE),
+        card(0, 0, w, h, 6, fill=CARD2, stroke=EDGE),
         t(w / 2, 26, "Shiva Kar", "bodyb", 14, TEXT, "middle"),
         t(w / 2, 46, "shivakar.me ↗", "body", 12.5, kit.GREEN, "middle"),
     ]

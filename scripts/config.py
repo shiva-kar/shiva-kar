@@ -8,17 +8,16 @@ will re-render all SVG cards and update README.md automatically.
 
 USER = "shiva-kar"
 NAME = "Shiva Kar"
-SUBTITLE = "Java backends, systems in C and Godot Engine"
+SUBTITLE = "Java Backend Developer · BCA Student"
 LOCATION = "Hojai, Assam, India"
 CGPA = "8.84/10"
 
 # Bio narrative: human, clear, zero AI em dashes
 ABOUT = (
-    "BCA Computer Science student at Amity University Online (CGPA 8.84/10), building Java backends with "
-    "Spring Boot, PostgreSQL, and Redis. I also work with React and TypeScript on the frontend when needed. "
-    "In my own time, I contribute bug fixes to Godot Engine across editor, GUI, GDScript, and web-platform "
-    "subsystems in C++ (13 pull requests submitted, 6 merged). I am also interested in systems programming "
-    "in C, POSIX APIs, and graphics rendering."
+    "Undergraduate at Amity University Online (CGPA: 8.84/10) focused on Java backend engineering "
+    "(REST APIs, PostgreSQL, Redis, JPA/Hibernate). Contributor to Godot Engine in C++ across "
+    "editor, GUI, and web subsystems (15 pull requests submitted, 6 merged). Author of SXSHELL, "
+    "a modular POSIX shell in C (~550 lines). Based in Hojai, Assam, India."
 )
 
 
@@ -29,6 +28,13 @@ LINKS = {
     "github": ("GitHub", "github", "https://github.com/shiva-kar"),
     "x": ("X", "x", "https://x.com/sk_shivakar"),
 }
+
+METRICS_STRIP = [
+    ("BCA Computer Science", "CGPA 8.84/10", "Amity University Online"),
+    ("Godot Engine", "6 Merged PRs", "15 submitted (C++)"),
+    ("Primary Stack", "Java · Spring Boot", "PostgreSQL · Redis · Docker"),
+    ("Based in", "Hojai, Assam, India", "Open to Remote / Relocation"),
+]
 
 CURRENTLY = [
     "Building backend applications with Java, Spring Boot, PostgreSQL, and Redis",
@@ -66,52 +72,83 @@ CERTS = [
 
 EXCLUDE_REPOS = {USER, "open-source-projects-for-contributions", "Exercism.org", "C-Data-Structures"}
 
-PROJECT_TITLES = {
-    "resume-builder": "Resume Builder",
-    "SXSHELL-unix-like-shell": "SXSHELL",
-    "Custom-HTTP-Server-in-C": "Custom HTTP Server in C",
-    "bank-atm-cli": "Bank ATM CLI",
-    "streetflood-live": "StreetFlood Live",
-    "shiva-kar.github.io": "Personal Portfolio",
-}
-
-PROJECT_CHIPS = {
-    "resume-builder": ["Next.js 14", "TypeScript", "Tailwind CSS"],
-    "SXSHELL-unix-like-shell": ["C", "Shell", "POSIX"],
-    "Custom-HTTP-Server-in-C": ["C", "POSIX Sockets", "HTTP"],
-    "bank-atm-cli": ["Java", "CLI"],
-    "streetflood-live": ["React", "TypeScript", "OSRM"],
-    "shiva-kar.github.io": ["JavaScript", "Portfolio"],
-}
-
-# Developer Tools & Daily Workflow setup
-TOOLS = [
-    ("Languages", ["Java", "C", "SQL", "C++", "Python", "TypeScript"]),
-    ("Backend & Data", ["Spring Boot", "Hibernate/JPA", "PostgreSQL", "MySQL", "Redis"]),
-    ("Systems & DevOps", ["Linux", "POSIX APIs", "Docker", "Git", "Maven", "CMake"]),
-    ("Environment", ["IntelliJ IDEA", "VS Code", "JUnit 5", "Mockito", "Postman"]),
+PROJECTS = [
+    {
+        "title": "E-Commerce Backend API",
+        "category": "Core Java & Spring Boot",
+        "stack": "Java · Spring Boot · Spring Security · Spring Data JPA · Hibernate · PostgreSQL · Docker · JUnit 5 · Mockito",
+        "desc": "An e-commerce backend providing REST APIs for product management, shopping carts, orders, and user accounts with PostgreSQL persistence and secure JWT authentication.",
+        "highlights": [
+            "Layered controller-service-repository architecture with DTO pattern and centralized error handling",
+            "Spring Security with JWT authentication, password hashing, and role-based endpoint authorization",
+            "PostgreSQL persistence with Spring Data JPA/Hibernate, transactional integrity, and Docker environment",
+        ],
+    },
+    {
+        "title": "API Rate Limiter & Metering Service",
+        "category": "Distributed Systems",
+        "stack": "Java · Spring Boot · Redis · PostgreSQL · Bucket4j · Docker Compose",
+        "desc": "A distributed rate limiting and API usage metering service providing sliding-window and token-bucket algorithms with Redis atomic operations and client tier quotas.",
+        "highlights": [
+            "Token-bucket and sliding-window rate limiting algorithms backed by Redis atomic operations",
+            "Client tier quotas and distributed rate enforcement across high-concurrency endpoints",
+            "Header-based rate limit feedback (X-RateLimit-*) and usage metering analytics",
+        ],
+    },
+    {
+        "title": "SXSHELL (Unix-like POSIX Shell)",
+        "category": "Systems Programming in C",
+        "stack": "C · POSIX APIs · GCC · Make",
+        "desc": "A modular POSIX shell in C (~550 lines) implementing command parsing, fork/exec process management, I/O redirection, and pipelines.",
+        "highlights": [
+            "Modular architecture with 7 distinct C units and clean subsystem separation (~550 lines)",
+            "Process lifecycle management using fork, execvp, and waitpid system calls",
+            "I/O redirection (<, >, >>) and multi-command pipeline execution (|)",
+        ],
+    },
 ]
 
-MARQUEE = [
-    [("Java", "openjdk", "#f89820"), ("Spring Boot", "springboot", None), ("Hibernate", "hibernate", "#b7c0c8"),
-     ("PostgreSQL", "postgresql", None), ("MySQL", "mysql", "#5aa5d6"), ("Redis", "redis", None),
-     ("JWT", "jsonwebtokens", None), ("C", "c", None), ("C++", "cplusplus", "#4aa3e0"),
-     ("Linux", "linux", None), ("CMake", "cmake", "#3b8fd6"), ("Godot", "godotengine", None)],
-    [("Git", "git", None), ("GitHub", "github", "#e6edf3"), ("Maven", "apachemaven", "#e0405a"),
-     ("Docker", "docker", None), ("Postman", "postman", None), ("JUnit 5", "junit5", None),
-     ("IntelliJ", "intellijidea", "#fe315d"), ("VS Code", None, "#3b9cdc"), ("Python", "python", None),
-     ("JavaScript", "javascript", None), ("TypeScript", "typescript", None), ("React", "react", None),
-     ("Tailwind", "tailwindcss", None), ("HTML", "html5", None)],
+DISCIPLINES = [
+    ("Languages", [
+        ("Java", "openjdk", "#f89820"),
+        ("C", "c", "#a8b9cc"),
+        ("SQL", "postgresql", "#4169e1"),
+        ("C++", "cplusplus", "#4aa3e0"),
+        ("Python", "python", "#3776ab"),
+        ("TypeScript", "typescript", "#3178c6"),
+    ]),
+    ("Backend & Persistence", [
+        ("Spring Boot", "springboot", "#6db33f"),
+        ("Spring Data JPA", "hibernate", "#b7c0c8"),
+        ("Hibernate", "hibernate", "#b7c0c8"),
+        ("PostgreSQL", "postgresql", "#4169e1"),
+        ("Redis", "redis", "#dc382d"),
+        ("MySQL", "mysql", "#5aa5d6"),
+    ]),
+    ("Systems & DevOps", [
+        ("POSIX APIs", "linux", "#fcc624"),
+        ("Linux", "linux", "#fcc624"),
+        ("Docker", "docker", "#2496ed"),
+        ("Git", "git", "#f05032"),
+        ("Maven", "apachemaven", "#c71a36"),
+        ("CMake", "cmake", "#3b8fd6"),
+    ]),
+    ("Testing & Environment", [
+        ("JUnit 5", "junit5", "#25a162"),
+        ("Mockito", "junit5", "#25a162"),
+        ("IntelliJ IDEA", "intellijidea", "#fe315d"),
+        ("Postman", "postman", "#ff6c37"),
+        ("VS Code", None, "#3b9cdc"),
+        ("GitHub", "github", "#e6edf3"),
+    ]),
 ]
-
-CONCEPTS = []
 
 HEADERS = {
-    "projects": ("Featured Projects",),
-    "opensource": ("Open Source",),
-    "certs": ("Certifications",),
-    "stack": ("Tech Stack",),
-    "currently": ("Currently",),
-    "stats": ("GitHub Activity",),
-    "education": ("Education",),
+    "projects": ("What I've built.",),
+    "opensource": ("Godot Engine contributions.",),
+    "certs": ("Verified certifications.",),
+    "stack": ("Technologies & tools.",),
+    "currently": ("Current focus.",),
+    "stats": ("Contribution activity.",),
+    "education": ("Education & coursework.",),
 }

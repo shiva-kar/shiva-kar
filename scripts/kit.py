@@ -19,14 +19,14 @@ FD = os.path.join(ROOT, "scripts", "fonts")
 ICONS = json.load(open(os.path.join(ROOT, "scripts", "icons.json"), encoding="utf-8"))
 
 # Palette: Matching Shiva Kar's portfolio (shivakar.me / shiva-kar.github.io)
-# Warm dark forest tones, crisp emerald sage accent, zero generic cold slate slop
-CARD, CARD2, EDGE, EDGE2 = "#141814", "#191e19", "#273027", "#333e33"
-GREEN = "#58a983"    # Portfolio signature accent (--accent: #58a983)
-ORANGE = "#e5c07b"   # Portfolio warm amber/gold (--warning / terminal dot)
-BLUE = "#58a983"     # Unified with portfolio accent
-RED = "#eb6b6b"      # Portfolio danger / terminal red
+# Warm charcoal canvas, deep forest surface, crisp pine green accent, hairline borders
+CARD, CARD2, EDGE, EDGE2 = "#111312", "#161917", "#232825", "#2e3430"
+GREEN = "#4fa87d"    # Pine Forest Green (--accent: #4fa87d)
+ORANGE = "#e5c07b"   # Warm amber/gold (--warning / terminal dot)
+BLUE = "#4fa87d"     # Unified with pine green accent
+RED = "#eb6b6b"      # Terminal / danger red
 PURPLE = "#a594f9"
-TEXT, BODY, MUTED = "#eef1ec", "#c7cfc5", "#9fa79c"
+TEXT, BODY, MUTED = "#ededed", "#d1d5db", "#9ca3af"
 
 FONTS = {
     "body": ("Inter", 400, "inter-latin-400-normal.woff2"),
@@ -127,7 +127,7 @@ def doc(w, h, body):
             f'<style>{css}</style>{body}</svg>')
 
 
-def card(x, y, w, h, r=8, fill=CARD, stroke=EDGE):
+def card(x, y, w, h, r=6, fill=CARD, stroke=EDGE):
     return (f'<rect x="{x + .5:.1f}" y="{y + .5:.1f}" width="{w - 1:.1f}" height="{h - 1:.1f}" rx="{r}" '
             f'fill="{fill}" stroke="{stroke}"/>')
 

@@ -23,5 +23,5 @@ def currently(w):
             y += 10
 
     h = y + pad - 6
-    return w, h, card(0, 0, w, h, 8, fill=CARD, stroke=EDGE) + "".join(body)
+    return w, h, card(0, 0, w, h, 6, fill=CARD, stroke=EDGE) + "".join(body)
 
