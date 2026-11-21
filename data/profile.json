@@ -106,7 +106,7 @@
    "stars": 0,
    "forks": 0,
    "topics": [],
-   "updated": "2026-11-20"
+   "updated": "2026-11-21"
   }
  ],
  "stars": 21,
@@ -1778,7 +1778,7 @@
    },
    {
     "date": "2026-10-10",
-    "count": 13,
+    "count": 12,
     "level": 1
    },
    {
@@ -1983,8 +1983,13 @@
    },
    {
     "date": "2026-11-20",
-    "count": 6,
+    "count": 7,
     "level": 1
+   },
+   {
+    "date": "2026-11-21",
+    "count": 0,
+    "level": 0
    }
   ],
   "current_streak": 1,
@@ -2086,11 +2091,11 @@
   }
  ],
  "upstream_stars": {
-  "godotengine/godot": 120449,
+  "godotengine/godot": 120504,
   "wwwillgunnn/catppuccin-obsidian-colored-sidebar": 0,
-  "excalidraw/excalidraw": 135996
+  "excalidraw/excalidraw": 136043
  },
  "prs_total": 40,
  "issues_total": 22,
- "generated": "2026-11-20"
+ "generated": "2026-11-21"
 }

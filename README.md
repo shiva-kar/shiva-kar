@@ -93,4 +93,4 @@
 
 <a href="https://shivakar.me"><picture><source media="(min-width: 1012px)" srcset="assets/svg/footer.svg" /><img src="assets/svg/footer-mobile.svg" width="100%" alt="More at shivakar.me" /></picture></a>
 
-<p align="center"><sub>Stats refreshed 2026-11-20.</sub></p>
+<p align="center"><sub>Stats refreshed 2026-11-21.</sub></p>
