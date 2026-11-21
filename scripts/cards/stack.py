@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """Tech stack component: clean, static categorized grid of technologies and tools."""
-import config
-import kit
-from kit import BODY, CARD, CARD2, EDGE, ICONS, MUTED, TEXT, card, fit, icon, t
+from kit import BODY, CARD, EDGE, ICONS, TEXT, card, icon, t
 
 
 CATEGORIES = [
@@ -85,8 +83,4 @@ def marquee(w):
         
     total_h = card_y
     return w, total_h, "".join(body)
-
-
-def concepts(w):
-    return w, 0, ""
 

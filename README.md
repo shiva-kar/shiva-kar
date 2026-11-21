@@ -8,7 +8,7 @@
 
 <picture><source media="(min-width: 1012px)" srcset="assets/svg/pills.svg" /><img src="assets/svg/pills-mobile.svg" width="100%" alt="Key GitHub metrics: Godot merges, pull requests, contributions, stars" /></picture>
 
-<picture><source media="(min-width: 1012px)" srcset="assets/svg/about.svg" /><img src="assets/svg/about-mobile.svg" width="100%" alt="BCA Computer Science student building Java backends with Spring Boot and PostgreSQL; Godot Engine contributor" /></picture>
+<picture><source media="(min-width: 1012px)" srcset="assets/svg/about.svg" /><img src="assets/svg/about-mobile.svg" width="100%" alt="BCA Computer Science student building Java backends with Spring Boot and PostgreSQL; Godot Engine C++ contributor" /></picture>
 
 <p align="center">
 <a href="https://www.linkedin.com/in/shiva-kar/"><picture><img src="assets/svg/connect-linkedin.svg" height="38" alt="Linkedin" /></picture></a>

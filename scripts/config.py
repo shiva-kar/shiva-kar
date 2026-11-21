@@ -17,7 +17,7 @@ ABOUT = (
     "BCA Computer Science student at Amity University Online (CGPA 8.84/10), building Java backends with "
     "Spring Boot, PostgreSQL, and Redis. I also work with React and TypeScript on the frontend when needed. "
     "In my own time, I contribute bug fixes to Godot Engine across editor, GUI, GDScript, and web-platform "
-    "subsystems in C++ (15 pull requests submitted, 7 merged). I am also interested in systems programming "
+    "subsystems in C++ (13 pull requests submitted, 6 merged). I am also interested in systems programming "
     "in C, POSIX APIs, and graphics rendering."
 )
 

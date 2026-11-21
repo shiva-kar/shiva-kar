@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Open Source upstream contributions dashboard and standalone cards."""
+"""Open Source upstream contributions component: 2-column dashboard of merged and open work."""
 import kit
-from kit import BODY, CARD, CARD2, EDGE, GREEN, MUTED, ORANGE, TEXT, card, fit, t, wrap
+from kit import CARD, EDGE, GREEN, MUTED, ORANGE, TEXT, card, t, wrap
 
 
 def oss(w, data):
@@ -101,44 +101,4 @@ def oss(w, data):
         
         total_h = cy + pad
         return w, total_h, card(0, 0, w, total_h, 12, fill=CARD, stroke=EDGE) + "".join(body)
-
-
-def oss_repos(w, data):
-    return w, 0, ""
-
-
-def oss_merged(w, data):
-    rows = [(p["repo"], f"#{p['number']}", p["title"])
-            for p in sorted(data.get("merged", []), key=lambda p: p.get("date", ""), reverse=True)]
-    return _pr_card(w, f"Merged Upstream ({len(rows)})", GREEN, rows)
-
-
-def oss_open(w, data):
-    groups = {}
-    for p in sorted(data.get("open", []), key=lambda p: p.get("date", ""), reverse=True):
-        open_groups = groups.setdefault(p["repo"], []).append(p)
-    rows = []
-    for repo, ps in groups.items():
-        nums = ", ".join(f"#{p['number']}" for p in ps[:3]) + (f" +{len(ps) - 3}" if len(ps) > 3 else "")
-        rows.append((repo, nums, "; ".join(p["title"] for p in ps)))
-    return _pr_card(w, f"Open Pull Requests ({len(data.get('open', []))})", ORANGE, rows)
-
-
-def _pr_card(w, head, color, rows):
-    pad = 18 if w < 600 else 24
-    y = pad + 16
-    body = [t(pad, y, head, "bodyb", 15, color)]
-    y += 24
-    for i, (repo, nums, desc) in enumerate(rows):
-        body.append(t(pad, y, repo, "bodyb", 13.5, TEXT))
-        body.append(t(w - pad, y, nums, "mono", 11.5, MUTED, "end"))
-        y += 18
-        for ln in wrap(desc, "body", 12, w - 2 * pad, maxlines=2):
-            body.append(t(pad, y, ln, "body", 12, MUTED))
-            y += 16
-        y += 8
-        if i < len(rows) - 1:
-            body.append(f'<line x1="{pad}" x2="{w - pad}" y1="{y - 4}" y2="{y - 4}" stroke="{EDGE}"/>')
-    h = y + pad - 4
-    return w, h, card(0, 0, w, h, 12, fill=CARD, stroke=EDGE) + "".join(body)
 

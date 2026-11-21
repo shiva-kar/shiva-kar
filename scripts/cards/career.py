@@ -1,12 +1,7 @@
 #!/usr/bin/env python3
 """Career and education components: clean academic background and coursework."""
 import config
-import kit
-from kit import BODY, CARD, CARD2, EDGE, MUTED, TEXT, card, fit, t, wrap
-
-
-def timeline(w, data):
-    return w, 0, ""
+from kit import CARD, EDGE, MUTED, TEXT, card, t, wrap
 
 
 def education(w):
@@ -48,4 +43,3 @@ def education(w):
             
     h = y + pad - 6
     return w, h, card(0, 0, w, h, 10, fill=CARD, stroke=EDGE) + "".join(body)
-

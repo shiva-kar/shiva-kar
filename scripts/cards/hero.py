@@ -2,7 +2,7 @@
 """Hero and top statistics summary components."""
 import config
 import kit
-from kit import BLUE, CARD, CARD2, EDGE, GREEN, MUTED, ORANGE, TEXT, card, short, t, wrap
+from kit import BLUE, CARD, CARD2, EDGE, GREEN, MUTED, ORANGE, TEXT, card, t, wrap
 
 
 def hero(w, data):
