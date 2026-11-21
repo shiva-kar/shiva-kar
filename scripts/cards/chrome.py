@@ -24,10 +24,14 @@ def header(key, theme, w):
     return w, h, "".join(body)
 
 
-def connect(text, slug):
+def connect(text, slug, theme="dark"):
+    dark = theme == "dark"
+    bg = CARD2 if dark else "#fffefa"
+    border = EDGE if dark else "#dedfd7"
+    fg = kit.TEXT if dark else "#20241f"
     wd = 14 + 16 + 8 + kit.tw(text, "bodyb", 12.5, 0.2) + 16
-    body = (f'<rect x=".5" y=".5" width="{wd - 1:.1f}" height="35" rx="6" fill="{CARD2}" stroke="{EDGE}"/>'
-            + icon(slug, 13, 10, 16, kit.TEXT) + t(36, 22.5, text, "bodyb", 12.5, kit.TEXT, ls=0.2))
+    body = (f'<rect x=".5" y=".5" width="{wd - 1:.1f}" height="35" rx="6" fill="{bg}" stroke="{border}"/>'
+            + icon(slug, 13, 10, 16, fg) + t(36, 22.5, text, "bodyb", 12.5, fg, ls=0.2))
     return wd, 36, body
 
 

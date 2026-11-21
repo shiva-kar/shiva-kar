@@ -11,11 +11,11 @@
 <picture><source media="(min-width: 1012px)" srcset="assets/svg/about.svg" /><img src="assets/svg/about-mobile.svg" width="100%" alt="Undergraduate at Amity University Online building backend applications with Java, Spring Boot, PostgreSQL, and Godot Engine C++" /></picture>
 
 <p align="center">
-<a href="https://www.linkedin.com/in/shiva-kar/"><picture><img src="assets/svg/connect-linkedin.svg" height="36" alt="Linkedin" /></picture></a>
-<a href="mailto:sksmarttech48@gmail.com"><picture><img src="assets/svg/connect-email.svg" height="36" alt="Email" /></picture></a>
-<a href="https://shivakar.me"><picture><img src="assets/svg/connect-portfolio.svg" height="36" alt="Portfolio" /></picture></a>
-<a href="https://github.com/shiva-kar"><picture><img src="assets/svg/connect-github.svg" height="36" alt="Github" /></picture></a>
-<a href="https://x.com/sk_shivakar"><picture><img src="assets/svg/connect-x.svg" height="36" alt="X" /></picture></a>
+<a href="https://www.linkedin.com/in/shiva-kar/"><picture><source media="(prefers-color-scheme: light)" srcset="assets/svg/connect-linkedin-light.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/svg/connect-linkedin-dark.svg" /><img src="assets/svg/connect-linkedin-dark.svg" height="36" alt="Linkedin" /></picture></a>
+<a href="mailto:sksmarttech48@gmail.com"><picture><source media="(prefers-color-scheme: light)" srcset="assets/svg/connect-email-light.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/svg/connect-email-dark.svg" /><img src="assets/svg/connect-email-dark.svg" height="36" alt="Email" /></picture></a>
+<a href="https://shivakar.me"><picture><source media="(prefers-color-scheme: light)" srcset="assets/svg/connect-portfolio-light.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/svg/connect-portfolio-dark.svg" /><img src="assets/svg/connect-portfolio-dark.svg" height="36" alt="Portfolio" /></picture></a>
+<a href="https://github.com/shiva-kar"><picture><source media="(prefers-color-scheme: light)" srcset="assets/svg/connect-github-light.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/svg/connect-github-dark.svg" /><img src="assets/svg/connect-github-dark.svg" height="36" alt="Github" /></picture></a>
+<a href="https://x.com/sk_shivakar"><picture><source media="(prefers-color-scheme: light)" srcset="assets/svg/connect-x-light.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/svg/connect-x-dark.svg" /><img src="assets/svg/connect-x-dark.svg" height="36" alt="X" /></picture></a>
 </p>
 
 <picture><source media="(prefers-color-scheme: light) and (min-width: 1012px)" srcset="assets/svg/header-projects-light.svg" /><source media="(prefers-color-scheme: dark) and (min-width: 1012px)" srcset="assets/svg/header-projects-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/svg/header-projects-light-mobile.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/svg/header-projects-dark-mobile.svg" /><img src="assets/svg/header-projects-dark-mobile.svg" width="100%" alt="What I've built." /></picture>
@@ -41,6 +41,12 @@
 <picture><source media="(prefers-color-scheme: light) and (min-width: 1012px)" srcset="assets/svg/header-stats-light.svg" /><source media="(prefers-color-scheme: dark) and (min-width: 1012px)" srcset="assets/svg/header-stats-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/svg/header-stats-light-mobile.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/svg/header-stats-dark-mobile.svg" /><img src="assets/svg/header-stats-dark-mobile.svg" width="100%" alt="Contribution activity." /></picture>
 
 <a href="https://github.com/shiva-kar"><picture><source media="(min-width: 1012px)" srcset="assets/svg/stats.svg" /><img src="assets/svg/stats-mobile.svg" width="100%" alt="GitHub contribution activity and language breakdown" /></picture></a>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shiva-kar/shiva-kar/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shiva-kar/shiva-kar/output/github-snake.svg" />
+  <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/shiva-kar/shiva-kar/output/github-snake.svg" width="100%" />
+</picture>
 
 <picture><source media="(prefers-color-scheme: light) and (min-width: 1012px)" srcset="assets/svg/header-education-light.svg" /><source media="(prefers-color-scheme: dark) and (min-width: 1012px)" srcset="assets/svg/header-education-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/svg/header-education-light-mobile.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/svg/header-education-dark-mobile.svg" /><img src="assets/svg/header-education-dark-mobile.svg" width="100%" alt="Education & coursework." /></picture>
 
