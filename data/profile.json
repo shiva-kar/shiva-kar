@@ -134,7 +134,7 @@
  ],
  "languages_basis": "repos",
  "calendar": {
-  "total": 1718,
+  "total": 1722,
   "days": [
    {
     "date": "2025-11-16",
@@ -1988,7 +1988,7 @@
    },
    {
     "date": "2026-11-21",
-    "count": 22,
+    "count": 26,
     "level": 2
    }
   ],
@@ -2091,11 +2091,11 @@
   }
  ],
  "upstream_stars": {
-  "godotengine/godot": 120524,
+  "godotengine/godot": 120526,
   "wwwillgunnn/catppuccin-obsidian-colored-sidebar": 0,
-  "excalidraw/excalidraw": 136063
+  "excalidraw/excalidraw": 136066
  },
- "prs_total": 42,
+ "prs_total": 43,
  "issues_total": 22,
  "generated": "2026-11-21"
 }
