@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: ${{ github.workflow }}
+  group: profile-repo-write
   cancel-in-progress: false
 
 permissions:
@@ -20,7 +20,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0
 
       - name: Fetch latest SVGs and apply rendering fixes
         run: |
@@ -60,26 +60,30 @@ jobs:
           shutil.copyfile("light_mode.svg", "assets/svg/banner-light.svg")
           EOF
 
-      - name: Commit or amend and push if stats changed
+      - name: Commit or amend changes
         run: |
-          if git diff --quiet dark_mode.svg light_mode.svg assets/svg/banner-dark.svg assets/svg/banner-light.svg; then
-            echo "No changes in profile stats or info."
-            exit 0
-          fi
-
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add dark_mode.svg light_mode.svg assets/svg/banner-dark.svg assets/svg/banner-light.svg
 
-          COMMIT_MSG="chore: update gh-ascii profile card stats [skip ci]"
-          LAST_MSG="$(git log -1 --pretty=%s)"
+          if git diff --staged --quiet; then
+            echo "No changes in profile stats or info."
+            exit 0
+          fi
 
-          if [ "$LAST_MSG" = "$COMMIT_MSG" ]; then
-            echo "Previous commit was a card update — amending to keep commit history clean."
-            git commit --amend --no-edit --reset-author
-            git push --force-with-lease
+          LAST_AUTHOR="$(git log -1 --pretty=format:'%an')"
+          LAST_SUBJECT="$(git log -1 --pretty=format:'%s')"
+
+          if [ "$LAST_AUTHOR" = "github-actions[bot]" ] || [[ "$LAST_SUBJECT" =~ ^chore(\(.*\))?: ]]; then
+            echo "Previous commit is a bot chore ('$LAST_SUBJECT' by $LAST_AUTHOR) — squeezing changes into it."
+            git commit --amend -m "chore: refresh profile stats and cards [skip ci]" --reset-author
+            if ! git push --force-with-lease origin main; then
+              echo "Force push with lease failed (remote updated). Pulling rebase and pushing."
+              git pull --rebase origin main
+              git push origin main
+            fi
           else
-            echo "Creating new card update commit."
-            git commit -m "$COMMIT_MSG"
-            git push
+            echo "Previous commit is user work ('$LAST_SUBJECT' by $LAST_AUTHOR) — creating new chore commit."
+            git commit -m "chore: refresh profile stats and cards [skip ci]"
+            git push origin main
           fi
