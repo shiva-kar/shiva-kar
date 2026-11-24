@@ -70,6 +70,18 @@ CERTS = [
      "Relational DBs · PostgreSQL · SQLite · Normalization · Indexing"),
 ]
 
+# Open-source display limits to prevent infinite profile length
+MAX_OSS_PRS_PER_COL = 6
+MAX_OSS_PRS_MOBILE = 5
+
+# Human descriptions for repositories in the Repositories & Ecosystems summary
+REPO_DESCRIPTIONS = {
+    "godotengine/godot": "C++ engine internals, editor GUI, windowing, display scaling",
+    "catppuccin/visual-studio": "Visual Studio theme fidelity, Code Definition window, toolbar icons",
+    "excalidraw/excalidraw": "Syntax-highlighted code block element with light/dark palettes",
+    "wwwillgunnn/catppuccin-obsidian-colored-sidebar": "Obsidian UI styling, solid background contrast for colored folders",
+}
+
 EXCLUDE_REPOS = {USER, "open-source-projects-for-contributions", "Exercism.org", "C-Data-Structures"}
 
 PROJECTS = [

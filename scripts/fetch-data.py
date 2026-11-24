@@ -152,8 +152,18 @@ def main():
     basis, langs = languages(rs)
     data["languages"], data["languages_basis"] = langs[:6], basis
     data["calendar"] = calendar()
-    data["merged"] = prs("merged")
-    data["open"] = prs("open")
+    old_data = {}
+    if os.path.exists(os.path.join(ROOT, "data", "profile.json")):
+        try:
+            with open(os.path.join(ROOT, "data", "profile.json"), encoding="utf-8") as f:
+                old_data = json.load(f)
+        except Exception:
+            pass
+
+    merged_data = prs("merged")
+    open_data = prs("open")
+    data["merged"] = merged_data if merged_data else old_data.get("merged", [])
+    data["open"] = open_data if open_data else old_data.get("open", [])
     cache = {}
     for p in data["merged"] + data["open"]:
         cache.setdefault(p["repo"], None)
