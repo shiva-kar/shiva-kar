@@ -106,7 +106,7 @@
    "stars": 0,
    "forks": 0,
    "topics": [],
-   "updated": "2026-11-23"
+   "updated": "2026-11-24"
   }
  ],
  "stars": 21,
@@ -134,7 +134,7 @@
  ],
  "languages_basis": "repos",
  "calendar": {
-  "total": 1715,
+  "total": 1736,
   "days": [
    {
     "date": "2025-11-23",
@@ -1743,7 +1743,7 @@
    },
    {
     "date": "2026-10-10",
-    "count": 12,
+    "count": 13,
     "level": 1
    },
    {
@@ -1948,12 +1948,12 @@
    },
    {
     "date": "2026-11-20",
-    "count": 6,
+    "count": 7,
     "level": 1
    },
    {
     "date": "2026-11-21",
-    "count": 31,
+    "count": 32,
     "level": 3
    },
    {
@@ -1963,15 +1963,50 @@
    },
    {
     "date": "2026-11-23",
-    "count": 6,
+    "count": 7,
     "level": 1
+   },
+   {
+    "date": "2026-11-24",
+    "count": 17,
+    "level": 2
    }
   ],
-  "current_streak": 1,
+  "current_streak": 2,
   "longest_streak": 35,
-  "active_days": 300
+  "active_days": 301
  },
  "merged": [
+  {
+   "repo": "catppuccin/visual-studio",
+   "number": 104,
+   "title": "Fix tooltip pop-up colors to match the selected theme",
+   "date": "2026-11-24"
+  },
+  {
+   "repo": "catppuccin/visual-studio",
+   "number": 105,
+   "title": "Restore toolbar icon colours in dark themes",
+   "date": "2026-11-24"
+  },
+  {
+   "repo": "catppuccin/visual-studio",
+   "number": 107,
+   "title": "Match Code Definition window background to the selected theme",
+   "date": "2026-11-24"
+  },
+  {
+   "repo": "catppuccin/visual-studio",
+   "number": 108,
+   "title": "Fix selected tab visibility in Manage NuGet Packages",
+   "date": "2026-11-24"
+  },
+  {
+   "repo": "catppuccin/visual-studio",
+   "number": 110,
+   "title": "Fix C# documentation comment syntax highlighting",
+   "date": "2026-11-24"
+  },
   {
    "repo": "godotengine/godot",
    "number": 124942,
@@ -2016,24 +2051,6 @@
   }
  ],
  "open": [
-  {
-   "repo": "catppuccin/visual-studio",
-   "number": 107,
-   "title": "Match Code Definition window background to the selected theme",
-   "date": "2026-11-23"
-  },
-  {
-   "repo": "catppuccin/visual-studio",
-   "number": 104,
-   "title": "Fix tooltip pop-up colors to match the selected theme",
-   "date": "2026-11-23"
-  },
-  {
-   "repo": "catppuccin/visual-studio",
-   "number": 105,
-   "title": "Restore toolbar icon colours in dark themes",
-   "date": "2026-11-23"
-  },
   {
    "repo": "excalidraw/excalidraw",
    "number": 12297,
@@ -2084,12 +2101,12 @@
   }
  ],
  "upstream_stars": {
-  "godotengine/godot": 120612,
-  "wwwillgunnn/catppuccin-obsidian-colored-sidebar": 0,
   "catppuccin/visual-studio": 111,
-  "excalidraw/excalidraw": 136165
+  "godotengine/godot": 120656,
+  "wwwillgunnn/catppuccin-obsidian-colored-sidebar": 0,
+  "excalidraw/excalidraw": 136202
  },
- "prs_total": 47,
+ "prs_total": 49,
  "issues_total": 24,
- "generated": "2026-11-23"
+ "generated": "2026-11-24"
 }
