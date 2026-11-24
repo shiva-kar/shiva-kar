@@ -54,4 +54,4 @@
 
 <a href="https://shivakar.me"><picture><source media="(prefers-color-scheme: light) and (min-width: 1012px)" srcset="assets/svg/footer-light.svg" /><source media="(prefers-color-scheme: dark) and (min-width: 1012px)" srcset="assets/svg/footer-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/svg/footer-light-mobile.svg" /><source media="(prefers-color-scheme: dark)" srcset="assets/svg/footer-dark-mobile.svg" /><img src="assets/svg/footer-dark-mobile.svg" width="100%" alt="More at shivakar.me" /></picture></a>
 
-<p align="center"><sub>Stats refreshed 2026-11-21.</sub></p>
+<p align="center"><sub>Stats refreshed 2026-11-23.</sub></p>

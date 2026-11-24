@@ -2,7 +2,7 @@
  "login": "shiva-kar",
  "name": "Shiva Kar",
  "location": "Hojai, Assam, India",
- "followers": 4,
+ "followers": 3,
  "repos": [
   {
    "name": "resume-builder",
@@ -91,15 +91,6 @@
    "updated": "2026-11-06"
   },
   {
-   "name": "shiva-kar",
-   "desc": "",
-   "lang": "Python",
-   "stars": 0,
-   "forks": 0,
-   "topics": [],
-   "updated": "2026-11-21"
-  },
-  {
    "name": "shiva-kar.github.io",
    "desc": "Personal portfolio website for Shiva Kar \u2014 BCA student, C programmer, systems engineering enthusiast.",
    "lang": "JavaScript",
@@ -107,6 +98,15 @@
    "forks": 0,
    "topics": [],
    "updated": "2026-11-21"
+  },
+  {
+   "name": "shiva-kar",
+   "desc": "",
+   "lang": "Python",
+   "stars": 0,
+   "forks": 0,
+   "topics": [],
+   "updated": "2026-11-23"
   }
  ],
  "stars": 21,
@@ -124,53 +124,18 @@
    "pct": 12.5
   },
   {
-   "name": "Python",
+   "name": "JavaScript",
    "pct": 12.5
   },
   {
-   "name": "JavaScript",
+   "name": "Python",
    "pct": 12.5
   }
  ],
  "languages_basis": "repos",
  "calendar": {
-  "total": 1726,
+  "total": 1715,
   "days": [
-   {
-    "date": "2025-11-16",
-    "count": 0,
-    "level": 0
-   },
-   {
-    "date": "2025-11-17",
-    "count": 1,
-    "level": 1
-   },
-   {
-    "date": "2025-11-18",
-    "count": 8,
-    "level": 1
-   },
-   {
-    "date": "2025-11-19",
-    "count": 3,
-    "level": 1
-   },
-   {
-    "date": "2025-11-20",
-    "count": 2,
-    "level": 1
-   },
-   {
-    "date": "2025-11-21",
-    "count": 2,
-    "level": 1
-   },
-   {
-    "date": "2025-11-22",
-    "count": 2,
-    "level": 1
-   },
    {
     "date": "2025-11-23",
     "count": 6,
@@ -1988,13 +1953,23 @@
    },
    {
     "date": "2026-11-21",
-    "count": 30,
+    "count": 31,
     "level": 3
+   },
+   {
+    "date": "2026-11-22",
+    "count": 0,
+    "level": 0
+   },
+   {
+    "date": "2026-11-23",
+    "count": 6,
+    "level": 1
    }
   ],
-  "current_streak": 2,
-  "longest_streak": 41,
-  "active_days": 305
+  "current_streak": 1,
+  "longest_streak": 35,
+  "active_days": 300
  },
  "merged": [
   {
@@ -2041,6 +2016,24 @@
   }
  ],
  "open": [
+  {
+   "repo": "catppuccin/visual-studio",
+   "number": 107,
+   "title": "Match Code Definition window background to the selected theme",
+   "date": "2026-11-23"
+  },
+  {
+   "repo": "catppuccin/visual-studio",
+   "number": 104,
+   "title": "Fix tooltip pop-up colors to match the selected theme",
+   "date": "2026-11-23"
+  },
+  {
+   "repo": "catppuccin/visual-studio",
+   "number": 105,
+   "title": "Restore toolbar icon colours in dark themes",
+   "date": "2026-11-23"
+  },
   {
    "repo": "excalidraw/excalidraw",
    "number": 12297,
@@ -2091,11 +2084,12 @@
   }
  ],
  "upstream_stars": {
-  "godotengine/godot": 120528,
+  "godotengine/godot": 120612,
   "wwwillgunnn/catppuccin-obsidian-colored-sidebar": 0,
-  "excalidraw/excalidraw": 136068
+  "catppuccin/visual-studio": 111,
+  "excalidraw/excalidraw": 136165
  },
- "prs_total": 44,
- "issues_total": 22,
- "generated": "2026-11-21"
+ "prs_total": 47,
+ "issues_total": 24,
+ "generated": "2026-11-23"
 }
