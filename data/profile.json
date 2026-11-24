@@ -134,7 +134,7 @@
  ],
  "languages_basis": "repos",
  "calendar": {
-  "total": 1737,
+  "total": 1738,
   "days": [
    {
     "date": "2025-11-23",
@@ -1968,7 +1968,7 @@
    },
    {
     "date": "2026-11-24",
-    "count": 18,
+    "count": 19,
     "level": 2
    }
   ],
@@ -1981,73 +1981,85 @@
    "repo": "catppuccin/visual-studio",
    "number": 104,
    "title": "Fix tooltip pop-up colors to match the selected theme",
-   "date": "2026-11-24"
+   "date": "2026-11-24",
+   "timestamp": "2026-11-24T04:39:55Z"
   },
   {
    "repo": "catppuccin/visual-studio",
    "number": 105,
    "title": "Restore toolbar icon colours in dark themes",
-   "date": "2026-11-24"
+   "date": "2026-11-24",
+   "timestamp": "2026-11-24T04:58:22Z"
   },
   {
    "repo": "catppuccin/visual-studio",
    "number": 107,
    "title": "Match Code Definition window background to the selected theme",
-   "date": "2026-11-24"
+   "date": "2026-11-24",
+   "timestamp": "2026-11-24T05:05:54Z"
   },
   {
    "repo": "catppuccin/visual-studio",
    "number": 108,
    "title": "Fix selected tab visibility in Manage NuGet Packages",
-   "date": "2026-11-24"
+   "date": "2026-11-24",
+   "timestamp": "2026-11-24T05:10:42Z"
   },
   {
    "repo": "catppuccin/visual-studio",
    "number": 110,
    "title": "Fix C# documentation comment syntax highlighting",
-   "date": "2026-11-24"
+   "date": "2026-11-24",
+   "timestamp": "2026-11-24T05:15:03Z"
   },
   {
    "repo": "godotengine/godot",
    "number": 124942,
    "title": "Fix integer zoom with fractional display scales",
-   "date": "2026-11-02"
+   "date": "2026-11-02",
+   "timestamp": "2026-11-02T15:04:47Z"
   },
   {
    "repo": "godotengine/godot",
    "number": 124931,
    "title": "Fix \"Save on Focus Loss\" recreating deleted open scenes",
-   "date": "2026-10-30"
+   "date": "2026-10-30",
+   "timestamp": "2026-10-30T01:05:50Z"
   },
   {
    "repo": "godotengine/godot",
    "number": 124789,
    "title": "Fix resource reference count not updating when resetting a property",
-   "date": "2026-10-23"
+   "date": "2026-10-23",
+   "timestamp": "2026-10-23T15:25:08Z"
   },
   {
    "repo": "godotengine/godot",
    "number": 124054,
    "title": "Disable text selection in script editor diagnostic tooltips",
-   "date": "2026-10-07"
+   "date": "2026-10-07",
+   "timestamp": "2026-10-07T14:25:40Z"
   },
   {
    "repo": "godotengine/godot",
    "number": 124170,
    "title": "Fix script tooltip appearing outside script editor",
-   "date": "2026-10-06"
+   "date": "2026-10-06",
+   "timestamp": "2026-10-06T17:11:06Z"
   },
   {
    "repo": "godotengine/godot",
    "number": 123035,
    "title": "Fix \"Cannot remove\" error when deleting files in the Web Editor",
-   "date": "2026-09-16"
+   "date": "2026-09-16",
+   "timestamp": "2026-09-16T16:22:29Z"
   },
   {
    "repo": "wwwillgunnn/catppuccin-obsidian-colored-sidebar",
    "number": 1,
    "title": "Fixed style: apply solid background and dark text to active/hovered colored folders.",
-   "date": "2026-08-06"
+   "date": "2026-08-06",
+   "timestamp": "2026-08-06T11:38:46Z"
   }
  ],
  "open": [
@@ -2055,56 +2067,64 @@
    "repo": "excalidraw/excalidraw",
    "number": 12297,
    "title": "feat(editor): add syntax-highlighted code block element and theme support with light and dark palette",
-   "date": "2026-10-14"
+   "date": "2026-10-14",
+   "timestamp": "2026-10-14T19:46:06Z"
   },
   {
    "repo": "godotengine/godot",
    "number": 123621,
    "title": "Fix `always_on_top` propagation for non-exclusive transient windows",
-   "date": "2026-09-18"
+   "date": "2026-09-18",
+   "timestamp": "2026-09-18T20:43:49Z"
   },
   {
    "repo": "godotengine/godot",
    "number": 124788,
    "title": "Fix missing link icon when dragging an unchecked theme override",
-   "date": "2026-10-22"
+   "date": "2026-10-22",
+   "timestamp": "2026-10-22T18:36:54Z"
   },
   {
    "repo": "godotengine/godot",
    "number": 124071,
    "title": "Fix Tree Ctrl+click deselect on drag",
-   "date": "2026-10-01"
+   "date": "2026-10-01",
+   "timestamp": "2026-10-01T17:47:35Z"
   },
   {
    "repo": "godotengine/godot",
    "number": 123310,
    "title": "Add severity icons and copy button to diagnostic hover tooltips",
-   "date": "2026-09-08"
+   "date": "2026-09-08",
+   "timestamp": "2026-09-08T17:38:29Z"
   },
   {
    "repo": "godotengine/godot",
    "number": 123045,
    "title": "Fix script state not updating in the editor when global classes change",
-   "date": "2026-08-31"
+   "date": "2026-08-31",
+   "timestamp": "2026-08-31T17:13:48Z"
   },
   {
    "repo": "godotengine/godot",
    "number": 124060,
    "title": "GDScript: Fix autocomplete after func and static keywords",
-   "date": "2026-10-01"
+   "date": "2026-10-01",
+   "timestamp": "2026-10-01T12:22:55Z"
   },
   {
    "repo": "godotengine/godot",
    "number": 123105,
    "title": "Fix awaited coroutines during embedded game suspension",
-   "date": "2026-09-02"
+   "date": "2026-09-02",
+   "timestamp": "2026-09-02T12:25:38Z"
   }
  ],
  "upstream_stars": {
   "catppuccin/visual-studio": 112,
   "godotengine/godot": 120657,
   "wwwillgunnn/catppuccin-obsidian-colored-sidebar": 0,
-  "excalidraw/excalidraw": 136202
+  "excalidraw/excalidraw": 136205
  },
  "prs_total": 49,
  "issues_total": 24,
