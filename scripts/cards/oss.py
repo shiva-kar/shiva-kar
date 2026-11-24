@@ -105,25 +105,46 @@ def oss(w, data):
                 left_body.append(t(pad, ly, ln, "body", 12.5, kit.MUTED))
                 ly += 16
             ly += 8
+
+        # Right Column: Open Pull Requests dynamically utilizing the full vertical space
+        disp_open = []
+        cur_h = pad + 40
+        for p in all_open:
+            lines = wrap(p["title"], "body", 13, col_w, maxlines=2)
+            needed = 18 + len(lines) * 17 + 10
+            rem_reserve = 22 if len(disp_open) + 1 < len(all_open) else 0
+            if cur_h + needed + rem_reserve <= ly + 30:
+                disp_open.append((p, lines))
+                cur_h += needed
+            else:
+                break
         
-        # Right Column: Open Pull Requests
+        if len(disp_open) < min(len(all_open), limit):
+            disp_open = []
+            for p in all_open[:limit]:
+                lines = wrap(p["title"], "body", 13, col_w, maxlines=2)
+                disp_open.append((p, lines))
+            cur_h = pad + 40 + sum(18 + len(lines) * 17 + 10 for _, lines in disp_open)
+        
+        remaining_gap = max(0, ly - cur_h)
+        extra_pad = min(12, remaining_gap // max(1, len(disp_open)))
+
         right_x = pad + col_w + col_gap
         right_body = [
             t(right_x, pad + 16, f"Open Pull Requests ({len(all_open)})", "bodyb", 16, ORANGE)
         ]
         ry = pad + 40
-        for i, p in enumerate(disp_open):
+        for i, (p, lines) in enumerate(disp_open):
             repo = p["repo"]
             num = f"#{p['number']}"
-            title = p["title"]
             
             right_body.append(t(right_x, ry, repo, "bodyb", 13.5, TEXT))
             right_body.append(t(w - pad, ry, num, "mono", 12, ORANGE, "end"))
             ry += 18
-            for ln in wrap(title, "body", 13, col_w, maxlines=2):
+            for ln in lines:
                 right_body.append(t(right_x, ry, ln, "body", 13, kit.BODY))
                 ry += 17
-            ry += 10
+            ry += 10 + extra_pad
             if i < len(disp_open) - 1:
                 right_body.append(f'<line x1="{right_x}" x2="{w - pad}" y1="{ry - 5}" y2="{ry - 5}" stroke="{EDGE}"/>')
         
