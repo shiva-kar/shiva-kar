@@ -7,36 +7,15 @@ import kit
 from kit import CARD, EDGE, GREEN, MUTED, ORANGE, TEXT, card, t, wrap
 
 
-def select_diverse_prs(prs_list, limit):
-    """Selects up to `limit` PRs ensuring diversity across repositories,
-    prioritizing the most recent PR from each unique repository first,
-    then filling remaining slots with the newest PRs overall.
-    """
-    if len(prs_list) <= limit:
-        return prs_list
-    
-    by_repo = {}
-    for p in prs_list:
-        r = p.get("repo", "other")
-        by_repo.setdefault(r, []).append(p)
-    
-    selected = []
-    # 1. Take latest from each repository
-    for r, r_prs in by_repo.items():
-        if len(selected) < limit:
-            selected.append(r_prs[0])
-            
-    # 2. Fill remaining slots with newest PRs overall
-    seen_keys = {(p["repo"], p["number"]) for p in selected}
-    for p in prs_list:
-        if len(selected) >= limit:
-            break
-        key = (p["repo"], p["number"])
-        if key not in seen_keys:
-            selected.append(p)
-            seen_keys.add(key)
-            
-    return sorted(selected, key=lambda p: p.get("date", ""), reverse=True)
+def pr_sort_key(p):
+    """Sort key for recency: newest date/timestamp first, then highest PR number."""
+    dt = p.get("timestamp") or p.get("date") or ""
+    num = p.get("number") or 0
+    try:
+        num = int(num)
+    except (ValueError, TypeError):
+        num = 0
+    return (dt, num)
 
 
 def build_repos_summary(data):
@@ -73,12 +52,12 @@ def oss(w, data):
     m = w < 600
     pad = 20 if m else 28
     
-    all_merged = sorted(data.get("merged", []), key=lambda p: p.get("date", ""), reverse=True)
-    all_open = sorted(data.get("open", []), key=lambda p: p.get("date", ""), reverse=True)
+    all_merged = sorted(data.get("merged", []), key=pr_sort_key, reverse=True)
+    all_open = sorted(data.get("open", []), key=pr_sort_key, reverse=True)
     
     limit = getattr(config, "MAX_OSS_PRS_MOBILE", 5) if m else getattr(config, "MAX_OSS_PRS_PER_COL", 6)
-    disp_merged = select_diverse_prs(all_merged, limit)
-    disp_open = select_diverse_prs(all_open, limit)
+    disp_merged = all_merged[:limit]
+    disp_open = all_open[:limit]
     
     repos_summary = build_repos_summary(data)
     

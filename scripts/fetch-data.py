@@ -136,7 +136,8 @@ def prs(state):
     for i in j.get("items", []):
         repo = i["repository_url"].split("repos/")[1]
         out.append({"repo": repo, "number": i["number"], "title": i["title"],
-                    "date": (i.get("closed_at") or i["created_at"])[:10]})
+                    "date": (i.get("closed_at") or i["created_at"])[:10],
+                    "timestamp": i.get("closed_at") or i["created_at"] or ""})
     return out
 
 
