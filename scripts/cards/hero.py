@@ -34,10 +34,10 @@ def hero(w, data):
 
 def pills(w, data):
     m = w < 600
-    merged_godot = sum(1 for p in data.get("merged", []) if p.get("repo") == "godotengine/godot") or 6
+    merged_total = len(data.get("merged", [])) or 7
     items = [
         ("BCA COMPUTER SCIENCE", f"CGPA {config.CGPA}", "Amity University Online", TEXT),
-        ("GODOT ENGINE", f"{merged_godot} Merged PRs", "15 submitted (C++)", GREEN),
+        ("OPEN SOURCE", f"{merged_total} Merged PRs", "Upstream contributor", GREEN),
         ("PRIMARY STACK", "Java · Spring Boot", "PostgreSQL · Redis · Docker", TEXT),
         ("BASED IN", "Hojai, Assam, India", "Open to Remote / Relocate", TEXT),
     ]

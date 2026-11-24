@@ -11,6 +11,13 @@ def oss(w, data):
     merged_prs = sorted(data.get("merged", []), key=lambda p: p.get("date", ""), reverse=True)
     open_prs = sorted(data.get("open", []), key=lambda p: p.get("date", ""), reverse=True)
     
+    repos_summary = [
+        ("godotengine/godot", "6 merged · 7 open", "C++ engine internals, editor GUI, windowing, display scaling"),
+        ("catppuccin/visual-studio", "3 open", "Theme fidelity, Code Definition window, toolbar icon restoration"),
+        ("excalidraw/excalidraw", "1 open", "Syntax-highlighted code block element with light/dark palettes"),
+        ("catppuccin-obsidian-colored-sidebar", "1 merged", "Obsidian UI styling, solid background contrast for colored folders"),
+    ]
+    
     if not m:
         col_gap = 24
         col_w = (w - 2 * pad - col_gap) / 2
@@ -36,6 +43,21 @@ def oss(w, data):
             ly += 10
             if i < len(merged_prs) - 1:
                 left_body.append(f'<line x1="{pad}" x2="{pad + col_w}" y1="{ly - 5}" y2="{ly - 5}" stroke="{EDGE}"/>')
+        
+        # Left Bottom: Multi-Repository Ecosystem Breakdown (balances height with right column)
+        ly += 8
+        left_body.append(f'<line x1="{pad}" x2="{pad + col_w}" y1="{ly}" y2="{ly}" stroke="{EDGE}" stroke-width="1.5"/>')
+        ly += 22
+        left_body.append(t(pad, ly, "Repositories & Ecosystems", "bodyb", 15, TEXT))
+        ly += 22
+        for r_name, r_stat, r_desc in repos_summary:
+            left_body.append(t(pad, ly, r_name, "bodyb", 13, TEXT))
+            left_body.append(t(pad + col_w, ly, r_stat, "mono", 11.5, MUTED, "end"))
+            ly += 17
+            for ln in wrap(r_desc, "body", 12.5, col_w, maxlines=2):
+                left_body.append(t(pad, ly, ln, "body", 12.5, kit.MUTED))
+                ly += 16
+            ly += 8
         
         # Right: Open
         right_x = pad + col_w + col_gap
@@ -98,6 +120,21 @@ def oss(w, data):
             cy += 8
             if i < len(open_prs) - 1:
                 body.append(f'<line x1="{pad}" x2="{w - pad}" y1="{cy - 4}" y2="{cy - 4}" stroke="{EDGE}"/>')
+        
+        # Mobile: Multi-Repository Ecosystem Breakdown
+        cy += 8
+        body.append(f'<line x1="{pad}" x2="{w - pad}" y1="{cy}" y2="{cy}" stroke="{EDGE}" stroke-width="1.5"/>')
+        cy += 20
+        body.append(t(pad, cy, "Repositories & Ecosystems", "bodyb", 14.5, TEXT))
+        cy += 20
+        for r_name, r_stat, r_desc in repos_summary:
+            body.append(t(pad, cy, r_name, "bodyb", 12.5, TEXT))
+            body.append(t(w - pad, cy, r_stat, "mono", 11, MUTED, "end"))
+            cy += 17
+            for ln in wrap(r_desc, "body", 12, w - 2 * pad, maxlines=2):
+                body.append(t(pad, cy, ln, "body", 12, kit.MUTED))
+                cy += 15
+            cy += 8
         
         total_h = cy + pad
         return w, total_h, card(0, 0, w, total_h, 6, fill=CARD, stroke=EDGE) + "".join(body)

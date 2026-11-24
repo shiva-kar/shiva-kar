@@ -15,9 +15,9 @@ CGPA = "8.84/10"
 # Bio narrative: human, clear, zero AI em dashes
 ABOUT = (
     "Undergraduate at Amity University Online (CGPA: 8.84/10) focused on Java backend engineering "
-    "(REST APIs, PostgreSQL, Redis, JPA/Hibernate). Contributor to Godot Engine in C++ across "
-    "editor, GUI, and web subsystems (15 pull requests submitted, 6 merged). Author of SXSHELL, "
-    "a modular POSIX shell in C (~550 lines). Based in Hojai, Assam, India."
+    "(REST APIs, PostgreSQL, Redis, JPA/Hibernate). Contributor to open-source software across "
+    "Godot Engine in C++ (editor, GUI, subsystems), developer tooling, and community ecosystems. "
+    "Author of SXSHELL, a modular POSIX shell in C (~550 lines). Based in Hojai, Assam, India."
 )
 
 
@@ -31,7 +31,7 @@ LINKS = {
 
 METRICS_STRIP = [
     ("BCA Computer Science", "CGPA 8.84/10", "Amity University Online"),
-    ("Godot Engine", "6 Merged PRs", "15 submitted (C++)"),
+    ("Open Source", "7 Merged PRs", "Upstream contributor"),
     ("Primary Stack", "Java · Spring Boot", "PostgreSQL · Redis · Docker"),
     ("Based in", "Hojai, Assam, India", "Open to Remote / Relocation"),
 ]
@@ -40,8 +40,8 @@ CURRENTLY = [
     "Building backend applications with Java, Spring Boot, PostgreSQL, and Redis",
     "REST API design, database persistence, authentication, transactions, and concurrency",
     "Practicing Data Structures & Algorithms and strengthening CS fundamentals",
-    "Contributing bug fixes to Godot Engine and working with its existing codebase",
-    "Exploring graphics programming, rendering, and game engine internals",
+    "Contributing bug fixes and improvements to open-source projects (Godot Engine, tools, themes)",
+    "Exploring systems programming, networking, and game engine internals",
 ]
 
 # (year label, short title, institution, dates, full degree name)
@@ -145,7 +145,7 @@ DISCIPLINES = [
 
 HEADERS = {
     "projects": ("What I've built.",),
-    "opensource": ("Godot Engine contributions.",),
+    "opensource": ("Open source contributions.",),
     "certs": ("Verified certifications.",),
     "stack": ("Technologies & tools.",),
     "currently": ("Current focus.",),
