@@ -91,15 +91,6 @@
    "updated": "2026-11-06"
   },
   {
-   "name": "shiva-kar",
-   "desc": "",
-   "lang": "Python",
-   "stars": 0,
-   "forks": 0,
-   "topics": [],
-   "updated": "2026-11-24"
-  },
-  {
    "name": "shiva-kar.github.io",
    "desc": "Personal portfolio website for Shiva Kar \u2014 BCA student, C programmer, systems engineering enthusiast.",
    "lang": "JavaScript",
@@ -107,6 +98,15 @@
    "forks": 0,
    "topics": [],
    "updated": "2026-11-24"
+  },
+  {
+   "name": "shiva-kar",
+   "desc": "",
+   "lang": "Python",
+   "stars": 0,
+   "forks": 0,
+   "topics": [],
+   "updated": "2026-11-28"
   }
  ],
  "stars": 21,
@@ -124,17 +124,17 @@
    "pct": 12.5
   },
   {
-   "name": "Python",
+   "name": "JavaScript",
    "pct": 12.5
   },
   {
-   "name": "JavaScript",
+   "name": "Python",
    "pct": 12.5
   }
  ],
  "languages_basis": "repos",
  "calendar": {
-  "total": 1738,
+  "total": 1739,
   "days": [
    {
     "date": "2025-11-23",
@@ -1968,11 +1968,31 @@
    },
    {
     "date": "2026-11-24",
-    "count": 19,
+    "count": 20,
     "level": 2
+   },
+   {
+    "date": "2026-11-25",
+    "count": 0,
+    "level": 0
+   },
+   {
+    "date": "2026-11-26",
+    "count": 0,
+    "level": 0
+   },
+   {
+    "date": "2026-11-27",
+    "count": 0,
+    "level": 0
+   },
+   {
+    "date": "2026-11-28",
+    "count": 0,
+    "level": 0
    }
   ],
-  "current_streak": 2,
+  "current_streak": 0,
   "longest_streak": 35,
   "active_days": 301
  },
@@ -2121,12 +2141,12 @@
   }
  ],
  "upstream_stars": {
-  "catppuccin/visual-studio": 112,
-  "godotengine/godot": 120657,
+  "catppuccin/visual-studio": 113,
+  "godotengine/godot": 120996,
   "wwwillgunnn/catppuccin-obsidian-colored-sidebar": 0,
-  "excalidraw/excalidraw": 136205
+  "excalidraw/excalidraw": 136440
  },
  "prs_total": 49,
  "issues_total": 24,
- "generated": "2026-11-24"
+ "generated": "2026-11-28"
 }
